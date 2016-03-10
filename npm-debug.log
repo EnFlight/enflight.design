@@ -1,0 +1,271 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\Users\\hon.hoang\\Desktop\\enflight',
+6 verbose install   [ 'Casper', 'ghost', 'ghost-s3-storage', 'ncp', 'pg', 'sqlite3' ] ]
+7 info preinstall ghost-on-heroku@0.7.8
+8 warn package.json Casper@1.2.8 No repository field.
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'Casper@TryGhost/Casper#1.2.8', null ]
+11 verbose cache add name=undefined spec="Casper@TryGhost/Casper#1.2.8" args=["Casper@TryGhost/Casper#1.2.8",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: '#1.2.8',
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'Casper@TryGhost/Casper',
+12 verbose parsed url   path: 'Casper@TryGhost/Casper',
+12 verbose parsed url   href: 'Casper@TryGhost/Casper#1.2.8' }
+13 verbose already installed skipping ghost@0.7.8 C:\Users\hon.hoang\Desktop\enflight
+14 verbose already installed skipping ghost-s3-storage@~0.2.2 C:\Users\hon.hoang\Desktop\enflight
+15 verbose already installed skipping ncp@^2.0.0 C:\Users\hon.hoang\Desktop\enflight
+16 verbose cache add [ 'pg@latest', null ]
+17 verbose cache add name=undefined spec="pg@latest" args=["pg@latest",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'pg@latest',
+18 verbose parsed url   path: 'pg@latest',
+18 verbose parsed url   href: 'pg@latest' }
+19 verbose already installed skipping sqlite3@^3.1.1 C:\Users\hon.hoang\Desktop\enflight
+20 verbose cache add name="Casper" spec="TryGhost/Casper#1.2.8" args=["Casper","TryGhost/Casper#1.2.8"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: '#1.2.8',
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'TryGhost/Casper',
+21 verbose parsed url   path: 'TryGhost/Casper',
+21 verbose parsed url   href: 'TryGhost/Casper#1.2.8' }
+22 verbose addNamed [ 'Casper', 'TryGhost/Casper#1.2.8' ]
+23 verbose addNamed [ null, null ]
+24 verbose cache add name="pg" spec="latest" args=["pg","latest"]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'latest',
+25 verbose parsed url   path: 'latest',
+25 verbose parsed url   href: 'latest' }
+26 verbose addNamed [ 'pg', 'latest' ]
+27 verbose addNamed [ null, null ]
+28 silly lockFile b15c3b06-Casper-TryGhost-Casper-1-2-8 Casper@TryGhost/Casper#1.2.8
+29 verbose lock Casper@TryGhost/Casper#1.2.8 C:\Users\hon.hoang\AppData\Roaming\npm-cache\b15c3b06-Casper-TryGhost-Casper-1-2-8.lock
+30 silly lockFile d405f0d6-pg-latest pg@latest
+31 verbose lock pg@latest C:\Users\hon.hoang\AppData\Roaming\npm-cache\d405f0d6-pg-latest.lock
+32 info addNameTag [ 'Casper', 'TryGhost/Casper#1.2.8' ]
+33 info addNameTag [ 'pg', 'latest' ]
+34 verbose request where is /Casper
+35 verbose request registry https://registry.npmjs.org/
+36 verbose request id 307650cfb335be91
+37 verbose url raw /Casper
+38 verbose url resolving [ 'https://registry.npmjs.org/', './Casper' ]
+39 verbose url resolved https://registry.npmjs.org/Casper
+40 verbose request where is https://registry.npmjs.org/Casper
+41 info trying registry request attempt 1 at 14:10:07
+42 http GET https://registry.npmjs.org/Casper
+43 verbose request where is /pg
+44 verbose request registry https://registry.npmjs.org/
+45 verbose url raw /pg
+46 verbose url resolving [ 'https://registry.npmjs.org/', './pg' ]
+47 verbose url resolved https://registry.npmjs.org/pg
+48 verbose request where is https://registry.npmjs.org/pg
+49 info trying registry request attempt 1 at 14:10:07
+50 http GET https://registry.npmjs.org/pg
+51 http 200 https://registry.npmjs.org/pg
+52 silly registry.get cb [ 200,
+52 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 silly registry.get     etag: '"8LLM78GNQPF4TR9ILI5TDIDE"',
+52 silly registry.get     'content-type': 'application/json',
+52 silly registry.get     'cache-control': 'max-age=300',
+52 silly registry.get     'content-length': '148412',
+52 silly registry.get     'accept-ranges': 'bytes',
+52 silly registry.get     date: 'Thu, 10 Mar 2016 22:09:52 GMT',
+52 silly registry.get     via: '1.1 varnish',
+52 silly registry.get     age: '187',
+52 silly registry.get     connection: 'keep-alive',
+52 silly registry.get     'x-served-by': 'cache-sjc3122-SJC',
+52 silly registry.get     'x-cache': 'HIT',
+52 silly registry.get     'x-cache-hits': '2',
+52 silly registry.get     'x-timer': 'S1457647792.940621,VS0,VE0',
+52 silly registry.get     vary: 'Accept' } ]
+53 http 404 https://registry.npmjs.org/Casper
+54 silly registry.get cb [ 404,
+54 silly registry.get   { 'content-type': 'application/json',
+54 silly registry.get     'cache-control': 'max-age=0',
+54 silly registry.get     'content-length': '2',
+54 silly registry.get     'accept-ranges': 'bytes',
+54 silly registry.get     date: 'Thu, 10 Mar 2016 22:09:52 GMT',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     age: '0',
+54 silly registry.get     connection: 'keep-alive',
+54 silly registry.get     'x-served-by': 'cache-sjc3120-SJC',
+54 silly registry.get     'x-cache': 'MISS',
+54 silly registry.get     'x-cache-hits': '0',
+54 silly registry.get     'x-timer': 'S1457647792.943236,VS0,VE47' } ]
+55 info maybeGithub Attempting TryGhost/Casper#1.2.8 from git://github.com/TryGhost/Casper#1.2.8
+56 silly lockFile f3c77220-git-github-com-TryGhost-Casper git://github.com/TryGhost/Casper
+57 verbose lock git://github.com/TryGhost/Casper C:\Users\hon.hoang\AppData\Roaming\npm-cache\f3c77220-git-github-com-TryGhost-Casper.lock
+58 verbose addNamed [ 'pg', '4.5.1' ]
+59 verbose addNamed [ '4.5.1', '4.5.1' ]
+60 silly lockFile 382f401b-pg-4-5-1 pg@4.5.1
+61 verbose lock pg@4.5.1 C:\Users\hon.hoang\AppData\Roaming\npm-cache\382f401b-pg-4-5-1.lock
+62 verbose addRemoteGit [ 'git://github.com/TryGhost/Casper', '1.2.8' ]
+63 silly lockFile c86d478c-gistry-npmjs-org-pg-pg-4-5-1-tgz https://registry.npmjs.org/pg/-/pg-4.5.1.tgz
+64 verbose lock https://registry.npmjs.org/pg/-/pg-4.5.1.tgz C:\Users\hon.hoang\AppData\Roaming\npm-cache\c86d478c-gistry-npmjs-org-pg-pg-4-5-1-tgz.lock
+65 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg/-/pg-4.5.1.tgz',
+65 verbose addRemoteTarball   '58a076870598e650b366883886c61afd68f4027b' ]
+66 info retry fetch attempt 1 at 14:10:07
+67 verbose fetch to= C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\registry.npmjs.org\pg\-\pg-4.5.1.tgz
+68 http GET https://registry.npmjs.org/pg/-/pg-4.5.1.tgz
+69 http 200 https://registry.npmjs.org/pg/-/pg-4.5.1.tgz
+70 silly lockFile c86d478c-gistry-npmjs-org-pg-pg-4-5-1-tgz https://registry.npmjs.org/pg/-/pg-4.5.1.tgz
+71 silly lockFile c86d478c-gistry-npmjs-org-pg-pg-4-5-1-tgz https://registry.npmjs.org/pg/-/pg-4.5.1.tgz
+72 silly lockFile 382f401b-pg-4-5-1 pg@4.5.1
+73 silly lockFile 382f401b-pg-4-5-1 pg@4.5.1
+74 silly lockFile d405f0d6-pg-latest pg@latest
+75 silly lockFile d405f0d6-pg-latest pg@latest
+76 info already installed pg@4.5.1
+77 verbose git clone git://github.com/TryGhost/Casper Cloning into bare repository 'C:\Users\hon.hoang\AppData\Roaming\npm-cache\_git-remotes\git-github-com-TryGhost-Casper-f3c77220'...
+78 verbose git fetch -a origin (git://github.com/TryGhost/Casper)
+79 silly verifyOwnership skipping for windows
+80 verbose git rev-list -n1 1.2.8 c1a3840cbe50e6594d80e5e5d4c2a0b8c132f36d
+81 verbose resolved git url git://github.com/TryGhost/Casper#c1a3840cbe50e6594d80e5e5d4c2a0b8c132f36d
+82 verbose tar unpack C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz
+83 silly lockFile cd1cc978--7431884135585278-tmp-tgz-unpack tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz-unpack
+84 verbose lock tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz-unpack C:\Users\hon.hoang\AppData\Roaming\npm-cache\cd1cc978--7431884135585278-tmp-tgz-unpack.lock
+85 silly lockFile c786c01a-10268-0-7431884135585278-tmp-tgz tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz
+86 verbose lock tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz C:\Users\hon.hoang\AppData\Roaming\npm-cache\c786c01a-10268-0-7431884135585278-tmp-tgz.lock
+87 silly gunzTarPerm modes [ '777', '666' ]
+88 silly gunzTarPerm extractEntry
+89 silly gunzTarPerm modified mode [ '', 509, 511 ]
+90 silly gunzTarPerm extractEntry .gitignore
+91 silly gunzTarPerm modified mode [ '.gitignore', 436, 438 ]
+92 silly gunzTarPerm extractEntry LICENSE
+93 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+94 silly gunzTarPerm extractEntry README.md
+95 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+96 silly gunzTarPerm extractEntry assets/
+97 silly gunzTarPerm modified mode [ 'assets/', 509, 511 ]
+98 silly gunzTarPerm extractEntry assets/css/
+99 silly gunzTarPerm modified mode [ 'assets/css/', 509, 511 ]
+100 silly gunzTarPerm extractEntry assets/css/screen.css
+101 silly gunzTarPerm modified mode [ 'assets/css/screen.css', 436, 438 ]
+102 silly gunzTarPerm extractEntry assets/fonts/
+103 silly gunzTarPerm modified mode [ 'assets/fonts/', 509, 511 ]
+104 silly gunzTarPerm extractEntry assets/fonts/casper-icons.eot
+105 silly gunzTarPerm modified mode [ 'assets/fonts/casper-icons.eot', 509, 511 ]
+106 silly gunzTarPerm extractEntry assets/fonts/casper-icons.svg
+107 silly gunzTarPerm modified mode [ 'assets/fonts/casper-icons.svg', 509, 511 ]
+108 silly gunzTarPerm extractEntry assets/fonts/casper-icons.ttf
+109 silly gunzTarPerm modified mode [ 'assets/fonts/casper-icons.ttf', 509, 511 ]
+110 silly gunzTarPerm extractEntry assets/fonts/casper-icons.woff
+111 silly gunzTarPerm modified mode [ 'assets/fonts/casper-icons.woff', 509, 511 ]
+112 silly gunzTarPerm extractEntry assets/js/
+113 silly gunzTarPerm modified mode [ 'assets/js/', 509, 511 ]
+114 silly gunzTarPerm extractEntry assets/js/index.js
+115 silly gunzTarPerm modified mode [ 'assets/js/index.js', 436, 438 ]
+116 silly gunzTarPerm extractEntry assets/js/jquery.fitvids.js
+117 silly gunzTarPerm modified mode [ 'assets/js/jquery.fitvids.js', 436, 438 ]
+118 silly gunzTarPerm extractEntry author.hbs
+119 silly gunzTarPerm modified mode [ 'author.hbs', 436, 438 ]
+120 silly gunzTarPerm extractEntry default.hbs
+121 silly gunzTarPerm modified mode [ 'default.hbs', 436, 438 ]
+122 silly gunzTarPerm extractEntry index.hbs
+123 silly gunzTarPerm modified mode [ 'index.hbs', 436, 438 ]
+124 silly gunzTarPerm extractEntry package.json
+125 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+126 silly gunzTarPerm extractEntry page.hbs
+127 silly gunzTarPerm modified mode [ 'page.hbs', 436, 438 ]
+128 silly gunzTarPerm extractEntry partials/
+129 silly gunzTarPerm modified mode [ 'partials/', 509, 511 ]
+130 silly gunzTarPerm extractEntry partials/loop.hbs
+131 silly gunzTarPerm modified mode [ 'partials/loop.hbs', 436, 438 ]
+132 silly gunzTarPerm extractEntry partials/navigation.hbs
+133 silly gunzTarPerm modified mode [ 'partials/navigation.hbs', 436, 438 ]
+134 silly gunzTarPerm extractEntry post.hbs
+135 silly gunzTarPerm modified mode [ 'post.hbs', 436, 438 ]
+136 silly gunzTarPerm extractEntry tag.hbs
+137 silly gunzTarPerm modified mode [ 'tag.hbs', 436, 438 ]
+138 silly lockFile cd1cc978--7431884135585278-tmp-tgz-unpack tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz-unpack
+139 silly lockFile cd1cc978--7431884135585278-tmp-tgz-unpack tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz-unpack
+140 silly lockFile c786c01a-10268-0-7431884135585278-tmp-tgz tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz
+141 silly lockFile c786c01a-10268-0-7431884135585278-tmp-tgz tar://C:\Users\HON~1.HOA\AppData\Local\Temp\npm-7436-VW24RnGH\1457647810268-0.7431884135585278\tmp.tgz
+142 silly lockFile f3c77220-git-github-com-TryGhost-Casper git://github.com/TryGhost/Casper
+143 silly lockFile f3c77220-git-github-com-TryGhost-Casper git://github.com/TryGhost/Casper
+144 silly lockFile b15c3b06-Casper-TryGhost-Casper-1-2-8 Casper@TryGhost/Casper#1.2.8
+145 silly lockFile b15c3b06-Casper-TryGhost-Casper-1-2-8 Casper@TryGhost/Casper#1.2.8
+146 info already installed Casper@1.2.8
+147 silly resolved []
+148 info build C:\Users\hon.hoang\Desktop\enflight
+149 verbose linkStuff [ false, false, false, 'C:\\Users\\hon.hoang\\Desktop' ]
+150 info linkStuff ghost-on-heroku@0.7.8
+151 verbose linkBins ghost-on-heroku@0.7.8
+152 verbose linkMans ghost-on-heroku@0.7.8
+153 verbose rebuildBundles ghost-on-heroku@0.7.8
+154 verbose rebuildBundles [ '.bin',
+154 verbose rebuildBundles   'Bleak',
+154 verbose rebuildBundles   'Casper',
+154 verbose rebuildBundles   'ghost',
+154 verbose rebuildBundles   'ghost-s3-storage',
+154 verbose rebuildBundles   'ncp',
+154 verbose rebuildBundles   'pg',
+154 verbose rebuildBundles   'sqlite3' ]
+155 verbose rebuild bundle C:\Users\hon.hoang\Desktop\enflight\node_modules\Bleak
+156 info build C:\Users\hon.hoang\Desktop\enflight\node_modules\Bleak
+157 info preinstall Casper@1.2.8
+158 verbose linkStuff [ false,
+158 verbose linkStuff   false,
+158 verbose linkStuff   false,
+158 verbose linkStuff   'C:\\Users\\hon.hoang\\Desktop\\enflight\\node_modules' ]
+159 info linkStuff Casper@1.2.8
+160 verbose linkBins Casper@1.2.8
+161 verbose linkMans Casper@1.2.8
+162 verbose rebuildBundles Casper@1.2.8
+163 info install Casper@1.2.8
+164 info postinstall Casper@1.2.8
+165 info install ghost-on-heroku@0.7.8
+166 info postinstall ghost-on-heroku@0.7.8
+167 verbose unsafe-perm in lifecycle true
+168 info ghost-on-heroku@0.7.8 Failed to exec postinstall script
+169 error ghost-on-heroku@0.7.8 postinstall: `ncp node_modules/Casper content/themes/casper`
+169 error Exit status 1
+170 error Failed at the ghost-on-heroku@0.7.8 postinstall script.
+170 error This is most likely a problem with the ghost-on-heroku package,
+170 error not with npm itself.
+170 error Tell the author that this fails on your system:
+170 error     ncp node_modules/Casper content/themes/casper
+170 error You can get their info via:
+170 error     npm owner ls ghost-on-heroku
+170 error There is likely additional logging output above.
+171 error System Windows_NT 6.1.7601
+172 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+173 error cwd C:\Users\hon.hoang\Desktop\enflight
+174 error node -v v0.10.40
+175 error npm -v 1.4.28
+176 error code ELIFECYCLE
+177 verbose exit [ 1, true ]
