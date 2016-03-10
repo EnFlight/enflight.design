@@ -49,7 +49,7 @@
 article, aside, details,
 figcaption, figure,
 footer, header, hgroup,
-main, section,
+main, nav, section,
 summary { display: block; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
@@ -426,7 +426,42 @@ margin on the iframe, cause it breaks stuff. */
    4. General - The main styles for the the theme
    ========================================================================== */
 
+#nav {
+    position: fixed;
+    background: #222;
+    z-index: 70;
+    transition: all ease-out 0.4s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    opacity: 1;
+}
+
+em, i {
+    font-weight: 400;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
 /* Big cover image on the home page */
+#header .header-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35px;
+    left: 0;
+    margin-top: -4em;
+    padding: 9em 0;
+    background: no-repeat fixed center 10% / cover;
+    z-index: 1;
+}
+
+#header {
+    position: relative;
+    padding: 8em 0;
+}
+
 .main-header {
     position: relative;
     display: table;
@@ -443,32 +478,59 @@ margin on the iframe, cause it breaks stuff. */
     width: 80%;
 }
 
-/* Create a bouncing scroll-down arrow on homepage with cover image */
-.scroll-down {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    bottom: 45px;
-    left: 50%;
-    margin-left: -16px;
-    width: 34px;
-    height: 34px;
-    font-size: 34px;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(255,255,255,0.7);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-animation: bounce 4s 2s infinite;
-    animation: bounce 4s 2s infinite;
+#header .header-description:after {
+    width: 0px;
 }
 
-/* Stop it bouncing and increase contrast when hovered */
-.scroll-down:hover {
-    color: #fff;
-    -webkit-animation: none;
-    animation: none;
+#header .header-image {
+    width: 3em;
+    height: 3em;
+    margin: -1em auto 1em;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 2px solid #36D995;
+    background: #222;
 }
+
+#header .header-name em {
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: -0.334em;
+    margin-left: -0.25em;
+    display: inline-block;
+    width: auto;
+    min-width: 0.5em;
+    height: 1.5em;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5em;
+    background: #222;
+    color: #fff;
+    text-shadow: 0 0 2px #222;
+    border-radius: 2em;
+}
+
+.main-nav {
+    position: relative;
+    padding: 35px 40px;
+    margin: 0 0 30px 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#header .header-cover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #222;
+}    
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
    on photos which happen to have a light background. */
@@ -661,95 +723,29 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
-.post {
-    position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
-    word-break: break-word;
-    hyphens: auto;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-   
-/*.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
+.post-list .post .post-image:after {
+    content: '';
     position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}*/
-
-body:not(.post-template) .post-title {
-    font-size: 3.6rem;
+    left: -5%;
+    bottom: -2.5em;
+    width: 110%;
+    height: 4em;
+    background: none; 
+    border-top: none; 
+    box-shadow: 0 0 2em rgba(0,0,0,0.2);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    transition: all ease-out 0.2s;
 }
 
-.post-title a {
-    text-decoration: none;
-}
-
-.post-excerpt p {
-    margin: 0;
-    font-size: 0.9em;
-    line-height: 1.7em;
-}
-
-.read-more {
-    text-decoration: none;
-}
-
-.post-meta {
-    display: block;
-    margin: 1.75rem 0 0 0;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: #9EABB3;
-}
-
-.author-thumb {
-    width: 24px;
-    height: 24px;
-    float: left;
-    margin-right: 9px;
-    border-radius: 100%;
-}
-
-.post-meta a {
-    color: #9EABB3;
-    text-decoration: none;
-}
-
-.post-meta a:hover {
-    text-decoration: underline;
-}
-
-.user-meta {
-    position: relative;
-    padding: 0.3rem 40px 0 100px;
-    min-height: 77px;
-}
-
-.post-date {
-    display: inline-block;
-    margin-left: 8px;
-    padding-left: 12px;
-    border-left: #d5dbde 1px solid;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    white-space: nowrap;
+.post .post-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.334em;
+    width: 0;
+    margin-bottom: -2px;
+    border-bottom: 4px solid #7B7B7B;
 }
 
 .user-image {
@@ -937,6 +933,27 @@ body:not(.post-template) .post-title {
     transition: box-shadow 0.5s;
 }
 
+/* The RSS icon, inserted via icon font */
+.subscribe:before {
+    color: #D2DEE3;
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    font-weight: 700;
+    transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+.subscribe:hover {
+    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    transition: box-shadow 0.25s;
+}
+
+.subscribe:hover:before {
+    color: #50585D;
+}
+
 /* CSS tooltip saying "Subscribe!" - initially hidden */
 .tooltip {
     opacity: 0;
@@ -983,7 +1000,7 @@ body:not(.post-template) .post-title {
 
 .post-head.main-header {
     height: 65%;
-    min-height: 550px;
+    min-height: 180px;
 }
 
 .no-cover.post-head.main-header {
@@ -1673,6 +1690,14 @@ body:not(.post-template) .post-title {
         font-size: 2.5rem;
     }
 
+    #post-index {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto 4em;
+        padding: 9em;
+        z-index: 10;
+    }
+
     .post-template .post {
         padding-bottom: 0;
         margin-bottom: 0;
@@ -1684,6 +1709,14 @@ body:not(.post-template) .post-title {
 
     .post-content img {
         padding: 0;
+    }
+
+    .post-content a {
+    border-bottom: 1px solid #222;
+    }
+
+    .post-content a:hover {
+    border-bottom: 1px solid #111;
     }
 
     .post-content .full-img {
@@ -1831,7 +1864,49 @@ body:not(.post-template) .post-title {
                 transform: translateY(-5px) rotate(-90deg);
     }
 }
+/* ==========================================================================
+   Footers and Tags
+   ========================================================================== */
+.post-footer .post-tags a {
+    font-size: 0.875em;
+    line-height: 1.714em;
+    display: inline-block;
+    border: 0;
+    margin-bottom: 0.286em;
+    padding: 0.286em 0.714em;
+    border-radius: 2px;
+    color: #fff;
+    text-shadow: 0 0 2px #2DB77E;
+    background: #222;
+    font-weight: 300;
+}
 
+.post-footer .post-tags a {
+    font-size: 0.875em;
+    line-height: 1.714em;
+    display: inline-block;
+    border: 0;
+    margin-bottom: 0.286em;
+    padding: 0.286em 0.714em;
+    border-radius: 2px;
+    color: #fff;
+    text-shadow: 0 0 2px #111;
+    background: #222;
+    font-weight: 300;
+}
+.post-footer .post-tags a {
+    font-size: 0.875em;
+    line-height: 1.714em;
+    display: inline-block;
+    border: 0;
+    margin-bottom: 0.286em;
+    padding: 0.286em 0.714em;
+    border-radius: 2px;
+    color: #fff;
+    text-shadow: 0 0 2px #111;
+    background: #222;
+    font-weight: 300;
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
