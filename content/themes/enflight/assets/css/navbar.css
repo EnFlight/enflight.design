@@ -66,14 +66,16 @@ nav ul li a:hover > li{
         text-shadow: 80 8 80px #fff;
   }
 
- .nav-links li {
+/* .nav-links li {
     margin: 15px 15px 15px 15px;
-  }
+  }*/
 
  .nav-links li ul li a{
-    margin: 15px 15px 15px 15px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
   }
-  
+
 nav ul{list-style:none}
 nav li{
   position:relative;
@@ -94,9 +96,30 @@ nav ol>li:before{
 nav ol{
   list-style-type:none;
   counter-reset:item}
-nav ol>li:before{content:counter(item) ". " !important;counter-increment:item}
+nav ol>li:before{
+  content:counter(item) ". " !important;
+  counter-increment:item}
 nav ol,ul{
-  padding-left:3em;margin:2em auto}
+  padding-left:0em;
+  margin:0em auto}
+nav ol ul{
+  padding-left:0em;}  
 nav ol ol,ol ul,ul ol,ul ul{
-  padding-left:1.5em;
-  margin:1em auto}
+  padding-left:0em;
+  margin:0em auto}
+ol, ul {
+    padding-left: 0rem;
+}
+nav ol ol, ol ul, ul ol, ul ul {
+    padding-left: 0em;
+    margin: 0em auto;
+}
+ol ol, ol ul, ul ol, ul ul {
+    padding-left: 0em;
+    margin: 0em auto;
+}
+nav ol ol, nav ul ul, nav ul ol, nav ol ul {
+    margin: 0 0 0.4em 0;
+    padding-left: 0em;
+}
+
