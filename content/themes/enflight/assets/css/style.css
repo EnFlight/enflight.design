@@ -79,7 +79,7 @@ li{
 	position:relative
 	list-style:none;}
 ul>li:before,ol>li:before{position:absolute;width:2em;margin-left:-3em;font-size:1em;font-weight:400;line-height:1.5em;text-align:right;color:#1F2026}
-ul>li:before{margin-top:0.125em;content:'*'}
+ul>li:before{margin-top:0.125em;/*content:'*'*/}
 ol{list-style-type:none;counter-reset:item}
 ol>li:before{content:counter(item) ". " !important;counter-increment:item}
 ol,ul{padding-left:3em;margin:2em auto}
