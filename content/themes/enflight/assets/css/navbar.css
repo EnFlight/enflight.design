@@ -1,5 +1,5 @@
 nav {
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
   font-size: 18px;
@@ -12,10 +12,10 @@ nav {
   display: flex;
 }
 
-nav ul {
+/*nav ul {
     display: flex;
     justify-content: center;
-  }
+  }*/
 
 nav ul ul{
     display: none;
@@ -69,3 +69,30 @@ nav ul li a:hover > li{
  .nav-links li {
     margin: 15px 15px 15px 15px;
   }
+
+nav ul{list-style:none}
+nav li{
+  position:relative;
+  list-style: none;}
+nav ul>li:before,
+nav ol>li:before{
+  position:absolute;
+  width:2em;
+  margin-left:-3em;
+  font-size:1em;
+  font-weight:400;
+  line-height:1.5em;
+  text-align:right;
+  color:#1F2026}
+nav ul>li:before{
+  margin-top:0.125em;
+  content:'*'}
+nav ol{
+  list-style-type:none;
+  counter-reset:item}
+nav ol>li:before{content:counter(item) ". " !important;counter-increment:item}
+nav ol,ul{
+  padding-left:3em;margin:2em auto}
+nav ol ol,ol ul,ul ol,ul ul{
+  padding-left:1.5em;
+  margin:1em auto}
