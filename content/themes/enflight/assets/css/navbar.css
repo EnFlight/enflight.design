@@ -70,6 +70,10 @@ nav ul li a:hover > li{
     margin: 15px 15px 15px 15px;
   }
 
+ .nav-links li ul li a{
+    margin: 15px 15px 15px 15px;
+  }
+  
 nav ul{list-style:none}
 nav li{
   position:relative;
@@ -84,9 +88,9 @@ nav ol>li:before{
   line-height:1.5em;
   text-align:right;
   color:#1F2026}
-nav ul>li:before{
+/*nav ul>li:before{
   margin-top:0.125em;
-  content:'*'}
+  content:'*'}*/
 nav ol{
   list-style-type:none;
   counter-reset:item}
