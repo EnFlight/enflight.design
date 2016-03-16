@@ -1,3 +1,16 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 @font-face{font-family:'Merriweather Sans';font-style:normal;
 font-weight:300;src:local("Merriweather Sans Light"),
 local("MerriweatherSans-Light"),
@@ -204,8 +217,7 @@ body{
 	box-sizing:border-box;
 	width:100%;
 	min-height:100vh;
-	padding-bottom:6em;
-	background:#F2F3F5}
+	padding-bottom:6em}
 
 @-webkit-keyframes pushPrev{0%{-webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0)}75%{opacity:1}100%{-webkit-transform:translate3d(-150%, 0, 0);
@@ -484,33 +496,48 @@ body{
 
 	#header.has-cover .header-meta span i{color:#fff;opacity:0.5}
 
-	#header .header-cover{position:absolute;width:100%;height:100%;top:0;left:0;margin-top:-4em;padding:4em 0;background:no-repeat fixed center 100% / cover;z-index:1}
+	#header .header-cover{
+		position:absolute;
+		width:100%;
+	    min-height: 42em;
+		top:0;
+		left:0;
+		margin-top:-4em;
+		padding:4em 0;
+		background:no-repeat fixed center 100% / cover;
+		z-index:1}
 
 	#header .header-cover:before{content:'';position:absolute;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,0.2)}
 
 	#header .header-cover:after{
 		content:'';
-		position:absolute;width:100%;left:0;bottom:0;border-bottom:4px solid #222}
+		position:absolute;
+		width:100%;
+		left:0;
+		bottom:0;
+		border-bottom:4px solid #222}
 
 
 	#footer{
 		position:absolute;
 		width:100%;
-		left:0;
-		bottom:0;
 		font-size:0.75em;
 		line-height:1.334em;
-		background:#1F2026;
-		color:#737580;
+		background:#222;
+		color:#73758;
 		z-index:20;
-		transition:all ease-out 0.4s;
-		-webkit-transform:translate3d(0, 0, 0);
-		transform:translate3d(0, 0, 0);
-		-webkit-transform-style:preserve-3d;transform-style:preserve-3d;opacity:1}
+	  	bottom: 0;}
 
-	#footer a{color:#9D9FA6;font-weight:400}
+	#footer a{
+		color:#9D9FA6;
+		font-weight:400}
 
-	#footer .credits{text-align:center;font-size:0.75em;line-height:1.334em;padding:2.667em;overflow:auto}
+	#footer .credits{
+		text-align:center;
+	    font-size: 1em;
+	    line-height: 1.334em;
+	    padding: 1em;
+		overflow:auto}
 
 	#footer .credits span{display:block}
 
@@ -518,7 +545,8 @@ body{
 
 	#footer .credits .credits-software{float:right}
 
-	.loading #footer{-webkit-transform:translate3d(0, 100%, 0);
+	.loading #footer{
+		-webkit-transform:translate3d(0, 100%, 0);
 		transform:translate3d(0, 100%, 0);
 		opacity:0}
 
@@ -528,17 +556,9 @@ body{
 		z-index:20}
 
 @media only screen and (max-width: 500px)
-.post {
-    width: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 0px;
-    margin-right: 16px;
-    padding-bottom: 2rem;
-    line-height: 1.65em;
-}
 
-	.post .post-image{display:block;
+	.post .post-image{
+		display:block;
 		margin:0;
 		padding:0}
 
@@ -593,8 +613,7 @@ body{
 		transform:translate3d(0, 0, 0);
 		opacity:1}}
 .post-list{position:relative}
-.post-list 
-.post{float:left;
+.post-list .post{float:left;
 	width:33.30%;
 	-webkit-transform:translate3d(0, 3em, 0);
 	transform:translate3d(0, 3em, 0);
@@ -607,7 +626,7 @@ body{
 	animation-delay:1.4s}
 
 @media only screen and (max-width: 50em){.post-list .post{width:49.90%}}
-@media only screen and (max-width: 30em){.post-list .post{width:100%;float:none}}
+@media only screen and (max-width: 30em){.post-list .post{width:96%;float:none}}
 
 	.post-list .post.initial{z-index:25}
 	.post-list .post.initial .inner{transition:all ease-in 0.5s}

@@ -14,9 +14,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset "css/dependencies.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-{{!-- 	<link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />	 --}}
 	<link rel="stylesheet" type="text/css" href="{{asset "css/navbar.css"}}" />	
-    <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" />	
 
 	{{ghost_head}}
 </head>
@@ -59,11 +57,11 @@
 			</nav>			
 			{{{body}}}
 			<div id="body-class" style="display: none;" class="{{body_class}}"></div>
-			<footer id="footer">
+{{!-- 			<footer id="footer">
 				<section class="credits">
 					<span class="credits-theme">Copyright <a href="http://www.enflightdesign.com" target="_blank" rel="nofollow">EnFlight Design</a></span>
 				</section>
-			</footer>
+			</footer> --}}
 			{{#if @blog.navigation}}
 			{{navigation}}
 			{{/if}}
