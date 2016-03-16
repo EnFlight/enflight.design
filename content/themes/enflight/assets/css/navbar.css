@@ -5,7 +5,7 @@ nav {
   font-size: 18px;
   font-weight: 900;
   position: fixed;
-  height: 60px;
+  height: 50px;
   background-color: #222;
   width: 100%;
   text-align: center;
@@ -25,12 +25,12 @@ nav ul li:hover > ul{
     display: block;
     color: #fff;
     background-color: #222;
-    margin: 0 auto;
+    margin: 5px auto;
     transition: all .5s ease;
   }
 
 nav ul li a:hover > li{
-    cursor: pointer;
+    cursor: pointer;    
   }
 
 
@@ -121,5 +121,80 @@ ol ol, ol ul, ul ol, ul ul {
 nav ol ol, nav ul ul, nav ul ol, nav ol ul {
     margin: 0 0 0.4em 0;
     padding-left: 0em;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0.5px 0.5px #ccc;    
 }
 
+.container {
+  height: 52px;
+  border-bottom: 1px #fff solid;
+  width: 100%;
+  position: fixed;
+  background: $background;
+}
+
+.navbar ul li {
+  height: 100%;
+  float: left;
+  background: $background;
+}
+
+.dropdown a:first-child {
+  width: 200px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  height: 100%;
+  font-size: 12px;
+  line-height: 50px;
+  transition: .3s ease-in-out;
+  padding-left: 10px;
+}
+
+.navbar .dropdown ul {
+  top: -120px;
+  position: absolute;
+  width: 200px;
+  transition: .3s;
+  z-index: -1;
+}
+
+.navbar .dropdown ul li {
+  border: 1px #fff solid;
+  padding-right: 50px;
+  border-top: none;
+  float: none;
+  position: relative;
+  transition: .3s;
+}
+
+.navbar .dropdown ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  left: 0;
+  height: 100%;
+  background: #fff;
+  transition: .5s;
+}
+
+.navbar .dropdown ul li a {
+  display: inline-block;
+  color: #fff;
+  mix-blend-mode: difference;
+  width: 200px;
+}
+/* HOVERS */
+
+.navbar .dropdown ul li:hover:before {
+  width: 100%;
+}
+.navbar .dropdown:hover ul {
+  top: 50px;
+}
