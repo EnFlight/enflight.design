@@ -509,11 +509,11 @@ body{
 	#header.has-cover .header-description:after{background:#fff}
 
 	#header .header-image{
-		width:3em;
-		height:3em;
+		width:5em;
+		height:5em;
 		margin:-1em auto 1em;
 		overflow:hidden;
-		border-radius:3em;
+		border-radius:.5em;
 		border:2px solid #222;
 		background:#222}
 
