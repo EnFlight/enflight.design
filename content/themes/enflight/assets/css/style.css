@@ -83,7 +83,7 @@ margin-left:.2em;
 ::selection{color:#222;background:#D6EDFF;text-shadow:none}
 a{color:inherit;text-decoration:none;font-weight:400;transition:all ease-out 0.2s}
 a:hover,a:focus{color:#1F2026}.post-content a{border-bottom:2px solid #222}
-.post-content a:hover,.post-content a:focus{border-color:#2DB77E}
+.post-content a:hover,.post-content a:focus{border-color:#222}
 h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;color:#1F2026}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:2em;line-height:1em;margin:2em 0 -0.5em}
@@ -108,7 +108,10 @@ blockquote{margin:2em auto;padding:0 1em;box-sizing:border-box;border-left:0.25e
 blockquote *{margin:1em auto}
 blockquote *:first-child{margin-top:0}
 blockquote *:last-child{margin-bottom:0}
-em,i{font-weight:400;font-style:italic;color:#363740}
+em,i{
+	font-weight:100;
+	font-style:italic;
+	color:#D0D0D0}
 strong,b{font-weight:700;color:#363740}
 small{font-size:0.9em}
 mark{background-color:#FFC336}
@@ -474,7 +477,7 @@ body{
 		height:1.5em;
 		padding:0 0.5em;
 		line-height:1.5em;font-style:normal;font-weight:400;font-size:0.5em;\
-		background:#222;color:#fff;text-shadow:0 0 2px #2DB77E;border-radius:2em}
+		background:#222;color:#fff;text-shadow:0 0 2px #222;border-radius:2em}
 
 	#header.has-cover .header-name{
 		color:#fff;
@@ -512,7 +515,7 @@ body{
 		overflow:hidden;
 		border-radius:3em;
 		border:2px solid #222;
-		background:#2DB77E}
+		background:#222}
 
 	#header .header-image img{
 		width:100%;
@@ -779,20 +782,6 @@ body{
 		transform-style:preserve-3d;
 		opacity:1}
 
-	.post-list .post .post-image:after{
-		content:'';
-		position:absolute;
-		left:-5%;
-		bottom:-2.5em;
-		width:110%;
-		height:4em;
-		background:#fff;
-		border-top:4px solid #222;
-		box-shadow:0 0 2em rgba(0,0,0,0.2);
-		-webkit-transform:rotate(5deg);
-		transform:rotate(5deg);
-		transition:all ease-out 0.2s}
-
 	.post-list .post:hover .inner,
 	.post-list .post:focus .inner{box-shadow:0 1px 2px rgba(0,0,0,0.05),0 2px 6px rgba(0,0,0,0.05),0 8px 48px rgba(0,0,0,0.1)}
 
@@ -827,7 +816,7 @@ body{
 
 	.post-list .post .post-more a:focus{color:#1F2026}
 
-	.post-list .post .post-more a i{color:#2DB77E}
+	.post-list .post .post-more a i{color:#222}
 
 	.post-footer{margin:4em 0}
 
@@ -849,12 +838,12 @@ body{
 		padding:0.286em 0.714em;
 		border-radius:2px;
 		color:#fff;
-		text-shadow:0 0 2px #2DB77E;
+		text-shadow:0 0 2px #222;
 		background:#222;
 		font-weight:300}
 
 	.post-footer .post-tags a:hover,
-	.post-footer .post-tags a:focus{background:#2DB77E}
+	.post-footer .post-tags a:focus{background:#222}
 
 	.post-footer .post-share{float:right}
 
@@ -995,6 +984,7 @@ body{
 		position:relative}
 	.pagination .pagination-item{
 		position:relative;
+    	font-family: 'Poiret One', cursive;
 		display:block;
 		height:3em;
 		line-height:3em;
@@ -1002,14 +992,13 @@ body{
 		text-align:center;
 		text-decoration:none;
 		font-weight:700;
-		color:#363740;
-		border:1px solid #222;
-		transition:all ease-out 0.1s;
+		color:#E0E0E0;
+		transition:all ease-out 0.3s;
 		border-radius:4em;
 		z-index:60}
 	.pagination .pagination-item:hover,.pagination .pagination-item:focus{
-		color:#1F2026;
-		box-shadow:0 0 0 2px #222}
+		color:#fff;
+		box-shadow:0 0 0 0px #222}
 	.pagination .pagination-item i{position:relative}
 
 @media only screen and (max-width: 30em){
@@ -1026,7 +1015,7 @@ body{
 	.pagination .pagination-next{float:left}
 	.pagination .pagination-next i{left:-0.05em}
 	.pagination .pagination-info{
-		display:block;
+		display:none;
 		left:0;
 		top:0;
 		height:3em;
