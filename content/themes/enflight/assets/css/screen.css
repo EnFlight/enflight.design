@@ -981,7 +981,7 @@ body:not(.post-template) .post-title {
 
 .post-head.main-header {
     height: 90%;
-    min-height: 35em;
+    min-height: 45em;
 }
 
 .no-cover.post-head.main-header {
