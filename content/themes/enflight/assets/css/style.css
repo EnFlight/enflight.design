@@ -481,7 +481,7 @@ body{
 
 	#header.has-cover .header-name{
 		color:#fff;
-		font-weight: 400;
+		font-weight: 900;
 		text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     	font-family: 'Poiret One', cursive}
 
@@ -708,7 +708,7 @@ body{
 	.post-list .post:nth-child(12){-webkit-animation-delay:1.2s;animation-delay:1.2s}
 
 	.post-list .post.post.featured .inner{
-		background:#1F2026;
+		background:#222;
 		color:#9D9FA6}
 
 	.post-list .post.post.featured .inner:after{content:'';
@@ -717,7 +717,7 @@ body{
 		top:0;
 		width:0;
 		height:0;
-		border-right:3em solid #FFC336;
+		border-right:3em solid #E1E2E6;
 		border-bottom:3em solid transparent;
 		z-index:1}
 
@@ -731,11 +731,10 @@ body{
 		height:1.75em;
 		line-height:2em;
 		text-align:center;
-		color:#1F2026;
+		color:#222;
 		z-index:2}
 
 	.post-list .post.post.featured .post-image:after{
-		background:#1F2026;
 		bottom:-2.5em;
 		height:5em}
 
