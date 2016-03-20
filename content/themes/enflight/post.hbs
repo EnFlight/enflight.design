@@ -7,12 +7,22 @@
 {{#post}}
 
     <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" /> 
+    <link rel="stylesheet" type="text/css" href="{{asset 'css/down-button.css'}}" />     
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
     </nav>
+
+{{!-- Scroll Down Button --}}
+<span class="top_text show_portfolio">
+    <svg class="line">
+    <path fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10" d="M190.333,125.5h10l24,24l24-24h10"></path>
+    </svg>
+</span>
+{{!-- Scroll Down Button --}}
+
 </header>
 
 <main class="content" role="main">
@@ -122,3 +132,5 @@ s.setAttribute('data-timestamp', +new Date());
 </main>
 
 {{/post}}
+
+    <script type="text/javascript" src="{{asset "js/scroll.js"}}"></script>
