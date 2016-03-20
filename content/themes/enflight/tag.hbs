@@ -1,9 +1,11 @@
 {{!< default}}
 
+	<link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
+
 <header id="header" class="header{{#if tag.image}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
 	<div class="inner">
 		<span class="header-title">
-			<h1 class="header-name">{{tag.name}} <em>{{pagination.total}}</em></h1>
+			<h1 class="header-name">{{tag.name}}</h1>
 			{{#if tag.description}}
 				<span class="header-description">{{tag.description}}</span>
 			{{/if}}

@@ -184,7 +184,7 @@
     // APP init
     //////////////////////
 
-    var scrollToTopBtn = document.querySelector('.scroll-to-top'),
+    var scrollTocontent = document.querySelector('.scroll-to-top'),
         steps = document.querySelectorAll('.js-scroll-step'),
         navigationContainer = document.querySelector('.quick-navigation'),
         links = navigationContainer.querySelectorAll('a'),
