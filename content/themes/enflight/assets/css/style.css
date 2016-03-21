@@ -1045,3 +1045,12 @@ body{
 		z-index:50;
 		color:#9D9FA6}
 
+/*Arrow down animation*/
+.arrow-down {
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
