@@ -10,6 +10,17 @@
 				<span class="header-description">{{@blog.description}}</span>
 			{{/if}}
 		</a>
+
+{{!-- Scroll Down Button --}}
+<span class="top_text show_portfolio scroll">
+    <a class="arrow-down scroll" href="#scroll">
+        <svg class="line">
+        <path fill="none" stroke="white" stroke-width="3" stroke-miterlimit="10" d="M190.333,125.5h10l24,24l24-24h10"></path>
+        </svg>
+    </a>
+</span>
+{{!-- Scroll Down Button --}}
+
 	</div>
 	{{#if @blog.cover}}
 	<div class="header-cover" style="background-image: url({{@blog.cover}})"></div>
@@ -18,7 +29,7 @@
 
 <div id="post-index" class="container">
 
-	<main class="content" role="main">
+	<main class="content" id="scroll" role="main">
 	
 		{{> "loop"}}
 	
