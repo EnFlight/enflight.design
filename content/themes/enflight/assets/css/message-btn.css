@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .overlay-social-links {
     display: flex;
+    align-items: center;
+}
+
+.overlay-social-links img {
+    margin: 10px;
 }
 
 .post .post-title {
