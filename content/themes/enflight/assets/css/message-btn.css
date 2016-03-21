@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.overlay-social-links a {
+    margin: auto;
+}
+
 .overlay-social-links img {
     margin: 10px;
 }
@@ -230,4 +234,12 @@ textarea.form-control-gallery:focus {
 
 .ss-q-title {
   display: none;
+}
+
+table {
+    margin: 0; 
+}
+
+table th, table td {
+     padding: 0; 
 }
