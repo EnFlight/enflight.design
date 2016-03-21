@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 .post .post-title {
     color: #ccc;
     padding-top: 1em;
+    padding-bottom: 0.3em;
     text-shadow: 8 8 8px #fff;    
 }
 
