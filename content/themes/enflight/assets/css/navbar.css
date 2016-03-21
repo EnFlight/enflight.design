@@ -65,7 +65,7 @@ nav ul li a:hover > li{
       color: #ccc;
       text-decoration: none;
       transition: color .5s ease;
-      margin: 0px 35px 0px 25px;
+      margin: 0px 25px 0px 25px;
       font-family: 'Poiret One', cursive;      
   }  
 
@@ -86,10 +86,20 @@ nav ul li a:hover > li{
     font-weight: 100;
   }
 
+.navbar-logo:hover{
+    text-shadow: 80 8 80px #fff;
+  }  
+
 nav ul{list-style:none}
+
 nav li{
   position:relative;
   list-style: none;}
+
+nav li:hover{
+  text-shadow: 80 8 80px #fff;
+}  
+
 nav ul>li:before,
 nav ol>li:before{
   position:absolute;
