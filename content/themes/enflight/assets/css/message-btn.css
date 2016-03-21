@@ -20,8 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post .post-title {
-    color: #eee;
+    color: #ccc;
     padding-top: 1em;
+    text-shadow: 8 8 8px #fff;    
 }
 
 #wrapper {

@@ -124,7 +124,8 @@ pre{
 	padding:1em;
 	font-family:'Inconsolata', monospace;
 	white-space:pre;
-	overflow:auto;background:#9D9FA6;
+	overflow:auto;
+	background:#9D9FA6;
 	color:#fff;
 	box-sizing:border-box}
 
