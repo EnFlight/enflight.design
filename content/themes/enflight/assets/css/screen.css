@@ -438,6 +438,7 @@ margin on the iframe, cause it breaks stuff. */
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
+    box-shadow: 0px 0px 9px rgba(208, 208, 208, 0.25);    
 }
 
 .main-header .inner {
