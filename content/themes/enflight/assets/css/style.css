@@ -112,7 +112,9 @@ em,i{
 	font-weight:100;
 	font-style:italic;
 	color:#D0D0D0}
-strong,b{font-weight:700;color:#363740}
+strong,b{
+	font-weight:700;
+	color:#eee;}
 small{font-size:0.9em}
 mark{background-color:#FFC336}
 code,tt{display:inline-block;position:relative;top:-1px;padding:3px 6px;margin:-1px 2px;font-family:'Inconsolata', monospace;font-size:0.875em;line-height:1.143em;white-space:pre;background:#E1E2E6;color:#000;font-weight:400;border-radius:2px}
