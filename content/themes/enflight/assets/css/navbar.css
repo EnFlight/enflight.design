@@ -222,6 +222,12 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
 
 @media (max-width: 1050px) {
 
-nav {
-    display: none;
+nav li{
+    display: none
+}
+
+@media (min-width: 1050px) {
+
+.menu-icon{
+    display: none
 }
