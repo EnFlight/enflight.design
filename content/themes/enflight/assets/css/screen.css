@@ -138,7 +138,7 @@ body {
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
-    color: #3A4145;
+    color: #9EABAE;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -191,12 +191,13 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
+    color: #ddd;
     transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #111;
+    color: #fff;
+    text-shadow: 0 0 1px #fff;
 }
 
 p, ul, ol, dl {
@@ -888,12 +889,14 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer h4 a {
-    color: #2e2e2e;
+    color: #ddd;
     text-decoration: none;
 }
 
 .post-footer h4 a:hover {
     text-decoration: underline;
+    color: #fff;
+    text-shadow: 0 0 1px #fff;
 }
 
 /* Drop the share links in the space to the right.
@@ -916,7 +919,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer .share a:hover {
-    color: #50585D;
+    color: #fff;
 }
 
 /* The subscribe icon on the footer */
@@ -1144,7 +1147,7 @@ body:not(.post-template) .post-title {
     overflow: hidden;
 }
 .read-next-story:hover:before {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.3);
     transition: all 0.2s ease;
 }
 .read-next-story:hover .post:before {
