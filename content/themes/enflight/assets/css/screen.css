@@ -206,9 +206,9 @@ p, ul, ol, dl {
     margin: 0 0 1.75em 0;
 }
 
-ol, ul {
+/*ol, ul {
     padding-left: 3rem;
-}
+}*/
 
 ol ol, ul ul,
 ul ol, ol ul {
@@ -233,9 +233,9 @@ dl dd {
     margin-bottom: 1em
 }
 
-li {
+/*li {
     margin: 0.4em 0;
-}
+}*/
 
 li li {
     margin: 0;
