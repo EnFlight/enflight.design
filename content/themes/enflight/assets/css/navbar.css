@@ -219,3 +219,9 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
 .navbar .dropdown:hover ul {
   top: 50px;
 }
+
+@media (max-width: 1050px) {
+
+nav {
+    display: none;
+}
