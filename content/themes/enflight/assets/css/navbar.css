@@ -391,9 +391,9 @@ span .menu-item:hover {
   vertical-align: middle; 
   height: 500px;
 }
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
-@import "compass/css3";
+@import "compass/css3";*/
 
 .menu {
   width: 40px;
