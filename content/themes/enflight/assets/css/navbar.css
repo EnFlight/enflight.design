@@ -252,6 +252,7 @@ nav img {
 }
 
 .menu-icon {
+    display: fixed;
     position: fixed;
     right: 40px;
     z-index: 103;
@@ -341,6 +342,7 @@ span .menu-item:hover {
 }
 
 .shownav{
+  display: fixed;
   z-index:102;
   width: 120px;
   height: 55px;
