@@ -223,6 +223,13 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
   display: none;
 }
 
+.shownav {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
 /*Mobile Version of Navbar*/
 
 @media (max-width: 1050px) {
