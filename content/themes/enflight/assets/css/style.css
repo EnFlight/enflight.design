@@ -782,7 +782,7 @@ body{
 		top:0;
 		width:100%;
 		height:100%;
-		box-shadow: 0px 0px 5px rgba(208, 208, 208, .5);
+		box-shadow: 0px 0px 5px rgba(208, 208, 208, .8);
 		z-index:10}
 
 	.post-list .post .post-image{
@@ -802,23 +802,21 @@ body{
 		opacity:1}
 
 	.post-list .post:hover .inner,
-	.post-list .post:focus .inner{box-shadow:0 1px 2px rgba(0,0,0,0.05),0 2px 6px rgba(0,0,0,0.05),0 8px 48px rgba(0,0,0,0.1)}
+	.post-list .post:focus .inner{box-shadow:0 1px 10px rgba(0,0,0,0.5),0 2px 6px rgba(0,0,0,0.5),0 8px 48px rgba(0,0,0,0.5)}
 
 	.post-list .post:hover .post-image img,
 	.post-list .post:focus .post-image img{
 		-webkit-transform:scale(1.05);
 		transform:scale(1.05);
-		box-shadow: 0px 0px 10px rgba(208, 208, 208, .8);
 		opacity:0.5}
 
 	.post-list .post:hover .post-image:after,
 	.post-list .post:focus .post-image:after{
 		border-top-width:0;
-		box-shadow: 0px 0px 10px rgba(208, 208, 208, .8)}
+		box-shadow:none}
 
 	.post-list .post .post-title{
 		font-size:1.5em;
-		box-shadow: 0px 0px 10px rgba(208, 208, 208, .8);		
 		line-height:1.167em}
 
 	.post-list .post .post-excerpt{margin:0}
