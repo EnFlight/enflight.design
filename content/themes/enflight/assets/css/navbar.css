@@ -259,6 +259,11 @@ nav img {
     top: 20px;
 }
 
+.menu-icon:hover {
+    color: #fff;
+    text-shadow: 80 8 80px #fff;
+}
+
 span .menu-item:hover {
     pointer: cursor;
 }
@@ -290,6 +295,10 @@ span .menu-item:hover {
     z-index:103;
 }
 
+.contact-icon img:hover {
+  color: #fff;
+  text-shadow: 80 8 80px #fff;
+}
 
 .menu-item {
   display: block;
