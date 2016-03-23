@@ -77,7 +77,11 @@ margin-left:.2em;
 .icon-arrow-right:before{content:'\e807'}
 .icon-rss:before{content:'\e808'}.icon-menu:before{content:'\e809'}
 .icon-gplus:before{content:'\e80a'}.icon-facebook:before{content:'\e80b'}
-.icon-twitter:before{content:'\e80c'}body{font:300 1em / 1.5em 'Merriweather Sans', sans-serif;color:#595B66}
+.icon-twitter:before{content:'\e80c'}
+body{
+	font:300 1em / 1.5em 'Merriweather Sans', 
+	sans-serif;
+	color:#989898}
 ::-moz-selection,
 ::-moz-selection{color:#222;background:#D6EDFF;text-shadow:none}
 ::-moz-selection,
@@ -829,7 +833,7 @@ body{
 		display:inline-block;
 		font-size:0.875em;
 		line-height:1.143em;
-		font-weight:400;color:#363740}
+		font-weight:400;color:#CCCCCC}
 
 	.post-list .post .post-more a:hover,
 
