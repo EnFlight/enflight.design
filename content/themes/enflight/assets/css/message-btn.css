@@ -26,9 +26,19 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .5s;
 -webkit-box-shadow: 0px 0px 10px 0px rgba(280, 280, 280, 0.5);
 -moz-box-shadow:    0px 0px 10px 0px rgba(280, 280, 280, 0.5);
-box-shadow:         0px 0px 10px 0px rgba(280, 280, 280, 0.5);}
+box-shadow:         0px 0px 10px 0px rgba(280, 280, 280, 0.5);
+}
 
-#wrapper {background: #222;}
+.post .post-title {
+    color: #ccc;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    text-shadow: 8 8 8px #fff;    
+}
+
+#wrapper {
+    background: #222;
+}
 
 #message_btn {
     position: fixed;
@@ -37,12 +47,14 @@ box-shadow:         0px 0px 10px 0px rgba(280, 280, 280, 0.5);}
     right: 40px;
     top: 5px;
     z-index: 9999;
-    transition: .6s;}
+    transition: .6s;
+}
 
+@media (max-width: 480px) {
 #message_btn {
     right: 20px;
-}  
-
+  }  
+}
 
 #message_btn img{
     width: 74%;
