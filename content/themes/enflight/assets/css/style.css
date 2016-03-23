@@ -814,10 +814,11 @@ body{
 	.post-list .post:hover .post-image:after,
 	.post-list .post:focus .post-image:after{
 		border-top-width:0;
-		box-shadow:none}
+		box-shadow: 0px 0px 10px rgba(208, 208, 208, .8)}
 
 	.post-list .post .post-title{
 		font-size:1.5em;
+		box-shadow: 0px 0px 10px rgba(208, 208, 208, .8);		
 		line-height:1.167em}
 
 	.post-list .post .post-excerpt{margin:0}
