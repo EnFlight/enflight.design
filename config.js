@@ -26,7 +26,7 @@ config = {
 
   // Production (Heroku)
   production: {
-    url: process.env.HEROKU_URL,
+    url: 'http://enflight.design',
     mail: {
       transport: 'SMTP',
       options: {
