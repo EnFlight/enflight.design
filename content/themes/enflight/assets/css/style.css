@@ -1057,5 +1057,13 @@ body{
     position: absolute;
     bottom: 7em;
     left: 0;
-    right: 0;
-}
+    right: 0}
+@media (max-width: 480px) {
+
+#header.has-cover .header-name{
+	display: none;
+	color:#fff;
+	font-weight: 900;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	font-family: 'Poiret One', cursive}
+}  
