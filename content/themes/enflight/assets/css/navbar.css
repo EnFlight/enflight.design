@@ -83,7 +83,7 @@ nav ul li a:hover > li{
     margin: 0px;
     list-style: none;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', cursive;   
     font-weight: 100;
   }
 
@@ -351,13 +351,7 @@ span .menu-item:hover {
 }
 
 .shownav{
-  display: block;
-  z-index:102;
-  width: 120px;
-  height: 55px;
-  right: 10px;
-  top:0;
-  position:fixed;
+  display: hidden;
 }
 
 .hidenav0{
@@ -409,9 +403,9 @@ span .menu-item:hover {
   vertical-align: middle; 
   height: 500px;
 }
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
-@import "compass/css3";
+@import "compass/css3";*/
 
 .menu {
   width: 40px;
