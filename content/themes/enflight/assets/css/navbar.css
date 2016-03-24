@@ -238,16 +238,6 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
   display: block;
 }
 
-.shownav{
-  display: block;
-  z-index:102;
-  width: 120px;
-  height: 55px;
-  right: 10px;
-  top:0;
-  position:fixed;
-}
-
 li.navbar-logo {
     display: block;
 }  
@@ -355,6 +345,16 @@ span .menu-item:hover {
 #navbar a {
   text-decoration: none;
   color: #fff;
+}
+
+.shownav{
+  display: block;
+  z-index:102;
+  width: 120px;
+  height: 55px;
+  right: 10px;
+  top:0;
+  position:fixed;
 }
 
 .hidenav0{
