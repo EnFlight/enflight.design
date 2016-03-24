@@ -83,7 +83,7 @@ nav ul li a:hover > li{
     margin: 0px;
     list-style: none;
     text-align: center;
-    font-family: 'Poiret One', cursive;   
+    font-family: 'Raleway', sans-serif;
     font-weight: 100;
   }
 
@@ -351,7 +351,13 @@ span .menu-item:hover {
 }
 
 .shownav{
-  display: hidden;
+  display: block;
+  z-index:102;
+  width: 120px;
+  height: 55px;
+  right: 10px;
+  top:0;
+  position:fixed;
 }
 
 .hidenav0{
