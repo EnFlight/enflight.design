@@ -353,9 +353,9 @@ span .menu-item:hover {
 .shownav{
   display: block;
   z-index:102;
-  width: 120px;
+  width: 80px;
   height: 55px;
-  right: 10px;
+  right: 0px;
   top:0;
   position:fixed;
 }
@@ -405,7 +405,7 @@ span .menu-item:hover {
 }
 
 .navbar-inner {
-  padding-top: 35px;
+  padding-top: 80px;
   vertical-align: middle; 
   height: 500px;
 }
