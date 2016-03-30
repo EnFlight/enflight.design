@@ -26,3 +26,8 @@ svg.line path{
     stroke-dashoffset: -900;
   }
 }
+@media (max-width: 480px) {
+
+svg{
+  margin:0 -28px}
+}  

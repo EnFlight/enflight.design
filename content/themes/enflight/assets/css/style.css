@@ -1066,4 +1066,7 @@ body{
 	font-weight: 900;
 	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 	font-family: 'Poiret One', cursive}
+
+header.main-header.post-head {
+    background-size: contain;}	
 }  
