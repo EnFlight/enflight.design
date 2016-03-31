@@ -678,7 +678,11 @@ body{
 
 /*.post .post-title:before{content:'';position:absolute;left:0;bottom:-0.334em;width:1em;margin-bottom:-2px;border-bottom:4px solid #222}*/
 
-.post .post-title a{text-decoration:none;color:inherit;font-weight:inherit}
+.post .post-title a{
+	text-decoration:none;
+	color:inherit;
+	letter-spacing: 2px;
+	font-weight:inherit}
 
 .post .post-header{
 	padding:4em 0 0;
