@@ -657,9 +657,9 @@ body{
 	.post .post-meta{
 		display:block;
 		font-size:0.75em;
-		line-height:1.334em;
+		line-height:1em;
 		font-weight:400;
-		margin-bottom:1.334em}
+		margin-top:0.5em}
 
 	.post .post-meta a{
 		color:inherit;
