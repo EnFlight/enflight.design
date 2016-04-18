@@ -520,5 +520,43 @@ span .menu-item:hover {
  text-align: right;
  padding-right: 40px;}
 
+#marker{
+  height: 6px;
+  background: $secondarycolor !important;
+  position: absolute;
+  bottom: 0;
+  width: $min-width;
+  z-index: 2;
+  @include transition(all 0.35s);
+}
 
+@for $i from 1 through 4{
+  .nav-links li:nth-child(#{$i}){
+    &:hover ul div{
+     @include transform(translate(0,0)); 
+    }
+    &:hover ~ #marker{
+      @include transform(translate(#{(-1+$i)*$min-width},0));
+    }
+  }    
 
+.drop{
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 48px;
+    div{
+      @include transform(translate(0,-100%));
+      @include transition(all 0.5s 0.1s);
+      position: relative;
+    }
+    li{
+      display:block;
+      padding: 0;
+      width: 100%;
+      background: $secondarycolor !important;
+    }
+  }
