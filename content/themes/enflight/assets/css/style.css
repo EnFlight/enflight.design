@@ -636,8 +636,11 @@ body{
 
 	
 	.footer-social-links img{
-		display: -webkit-inline-box}	
-			
+		display: -webkit-inline-box;
+		float: right;
+	    margin: 0px auto;
+	    padding-left: 5px}	
+
 	.loading #footer{
 		-webkit-transform:translate3d(0, 100%, 0);
 		transform:translate3d(0, 100%, 0);
