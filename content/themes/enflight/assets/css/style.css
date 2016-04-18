@@ -630,6 +630,14 @@ body{
 
 	#footer .credits .credits-software{float:right}
 
+	.footer-social-links{
+
+	}		
+
+	
+	.footer-social-links img{
+		display: -webkit-inline-box}	
+			
 	.loading #footer{
 		-webkit-transform:translate3d(0, 100%, 0);
 		transform:translate3d(0, 100%, 0);
