@@ -639,7 +639,9 @@ body{
 		display: -webkit-inline-box;
 		float: right;
 	    margin: 0px auto;
-	    padding-left: 5px}	
+	    padding-left: 5px;
+	    width: 20px;
+    	height: auto}	
 
 	.loading #footer{
 		-webkit-transform:translate3d(0, 100%, 0);
