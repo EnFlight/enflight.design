@@ -491,7 +491,7 @@ span .menu-item:hover {
   position: relative;
 }
 
-#marker {
+/*#marker {
   height: 2px;
   background: #ccc !important;
   position: absolute;
@@ -502,7 +502,7 @@ span .menu-item:hover {
   -moz-transition: all 0.35s;
   -ms-transition: all 0.35s;
   transition: all 0.35s;
-}
+}*/
 
 .nav-links li:nth-child(1):hover {
   -webkit-transform: translate(0, 0);
