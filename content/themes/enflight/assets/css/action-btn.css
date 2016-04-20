@@ -51,10 +51,10 @@
 
 @-webkit-keyframes neon1 {
   from {
-    box-shadow: 0 0 5px #A0038B, 0 0 10px #FD0000, 0 0 15px #FDFD00, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 15px #B13BA2, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
   to {
-    box-shadow: 0 0 2px #A0038B, 0 0 5px #FDFD00, 0 0 7px #FD0000, 0 0 10px #FF1177, 0 0 12px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
+    box-shadow: 0 0 2px #A0038B, 0 0 5px #FDFD00, 0 0 7px #B13BA2, 0 0 10px #FF1177, 0 0 12px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
   }
 }
 
