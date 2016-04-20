@@ -58,34 +58,8 @@
   }
 }
 
-.button:hover {
-  color: #fff;
-}
-/*.button:hover {
-  background-color: #ddd;
-  color: #222;
-  border: 1px solid rgba(0, 0, 0, .9);
-  box-shadow: 0px 0px 5px rgba(208, 208, 208, .8);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-.button:hover:before {
-  -webkit-transform: skewX(-45deg) translateX(13.5em);
-          transform: skewX(-45deg) translateX(13.5em);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}*/
+.button:hover {color: #fff;}
 
-/*.button {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  padding: 0.75em 2em;
-  color: white;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
-}*/
 .button:before {
   content: '';
   position: absolute;
@@ -94,6 +68,7 @@
   bottom: 0;
   left: 0;
   border: 2px solid transparent;
+  border-radius: 2px;
   -webkit-transition: border-width 0.25s;
   transition: border-width 0.25s;
   -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
@@ -104,14 +79,14 @@
   -webkit-filter: hue-rotate(0deg);
           filter: hue-rotate(0deg);
   -webkit-animation: 2.5s linear 0s infinite normal both paused hueShift;
-          animation: 2.5s linear 0s infinite normal both paused hueShift;
+          animation: 2.5s linear 0s infinite normal both paused hueShift
 }
+
 .button:hover:before {
   border-width: 5px;
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+          animation-play-state: running
 }
-
 @-webkit-keyframes hueShift {
   100% {
     -webkit-filter: hue-rotate(360deg);
