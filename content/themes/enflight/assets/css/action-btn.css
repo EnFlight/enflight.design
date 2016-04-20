@@ -33,7 +33,7 @@
   text-decoration: none;
   color: #fff;
   font-family: 'Poiret One', cursive;
-  border: 1px solid rgba(250, 250, 250, .5);
+/*  border: 1px solid rgba(250, 250, 250, .5);*/
   display: inline-block;
   background-color: #222;
   border-radius: 2px;
@@ -43,7 +43,7 @@
   position: relative;
   overflow: hidden;
 }
-.button:hover {
+/*.button:hover {
   background-color: #ddd;
   color: #222;
   border: 1px solid rgba(0, 0, 0, .9);
@@ -55,8 +55,19 @@
           transform: skewX(-45deg) translateX(13.5em);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
+}*/
 
+/*.button {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  padding: 0.75em 2em;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+}*/
 .button:before {
   content: '';
   position: absolute;
@@ -78,7 +89,7 @@
           animation: 0.5s linear 0s infinite normal both paused hueShift;
 }
 .button:hover:before {
-  border-width: 5px;
+  border-width: 7px;
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
