@@ -78,9 +78,9 @@
   border: 2px solid transparent;
   -webkit-transition: border-width 0.25s;
   transition: border-width 0.25s;
-  -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
+/*  -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
        -o-border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
-          border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
+          border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);*/
   border-image-slice: 1;
   pointer-events: none;
   -webkit-filter: hue-rotate(0deg);
@@ -89,7 +89,7 @@
           animation: 0.5s linear 0s infinite normal both paused hueShift;
 }
 .button:hover:before {
-  border-width: 7px;
+  border-width: 5px;
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
