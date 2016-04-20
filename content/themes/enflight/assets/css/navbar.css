@@ -504,55 +504,14 @@ span .menu-item:hover {
   transition: all 0.35s;
 }
 
-.nav-links li:nth-child(1):hover {
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.nav-links li:nth-child(1):hover ~ #marker {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-}
-
-.nav-links li:nth-child(2):hover {
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.nav-links li:nth-child(2):hover ~ #marker {
-  -webkit-transform: translate(120px, 0);
-  -moz-transform: translate(120px, 0);
-  -ms-transform: translate(120px, 0);
-  transform: translate(120px, 0);
-}
-
-.nav-links li:nth-child(3):hover {
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.nav-links li:nth-child(3):hover ~ #marker {
-  -webkit-transform: translate(240px, 0);
-  -moz-transform: translate(240px, 0);
-  -ms-transform: translate(240px, 0);
-  transform: translate(240px, 0);
-}
-
-.nav-links li:nth-child(4):hover {
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.nav-links li:nth-child(4):hover ~ #marker {
-  -webkit-transform: translate(360px, 0);
-  -moz-transform: translate(360px, 0);
-  -ms-transform: translate(360px, 0);
-  transform: translate(360px, 0);
+@for $i from 1 through 8{
+  #main li:nth-child(#{$i}){
+    &:hover ul div{
+     @include transform(translate(100,990)); 
+    }
+    &:hover ~ #marker{
+      @include transform(translate(#{(-1+$i)*$min-width},0));
+    }
+  }    
 }
 
