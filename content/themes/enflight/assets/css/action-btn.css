@@ -51,10 +51,10 @@
 
 @-webkit-keyframes neon1 {
   from {
-    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 15px #B13BA2, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 10px #B13BA2, 0 0 15px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 40px #FF1177, 0 0 60px #FF1177;
   }
   to {
-    box-shadow: 0 0 2px #A0038B, 0 0 5px #FDFD00, 0 0 7px #B13BA2, 0 0 10px #FF1177, 0 0 12px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
+    box-shadow: 0 0 2.5px #A0038B, 0 0 5px #FDFD00, 0 0 5px #B13BA2, 0 0 7.5px #FF1177, 0 0 10px #FF1177, 0 0 15px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177;
   }
 }
 
@@ -103,8 +103,8 @@
   pointer-events: none;
   -webkit-filter: hue-rotate(0deg);
           filter: hue-rotate(0deg);
-  -webkit-animation: 1.5s linear 0s infinite normal both paused hueShift;
-          animation: 1.5s linear 0s infinite normal both paused hueShift;
+  -webkit-animation: 2.5s linear 0s infinite normal both paused hueShift;
+          animation: 2.5s linear 0s infinite normal both paused hueShift;
 }
 .button:hover:before {
   border-width: 5px;
