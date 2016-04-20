@@ -75,12 +75,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border: 2px solid transparent;
+  border: 2px solid #fff;
   -webkit-transition: border-width 0.25s;
   transition: border-width 0.25s;
-/*  -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
+  -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
        -o-border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
-          border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);*/
+          border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
   border-image-slice: 1;
   pointer-events: none;
   -webkit-filter: hue-rotate(0deg);
