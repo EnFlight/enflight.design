@@ -26,6 +26,10 @@ nav ul ul{
     display: none;
   }
 
+nav ul ul li{
+    font-family: 'Poiret One', cursive; 
+  }
+
 nav ul li:hover > ul{
     display: block;
     color: #fff;
@@ -60,6 +64,7 @@ nav ul li a:hover > li{
   .center ul li{
     list-style: none;
     margin: 0.7em 0;
+    font-family: 'Poiret One', cursive;     
   }
 
   .center a {
@@ -83,7 +88,7 @@ nav ul li a:hover > li{
     margin: 0px;
     list-style: none;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-weight: 100;
   }
 
@@ -154,17 +159,11 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
   position: fixed;
   background: $background;
 }
-
 .navbar ul li {
   height: 100%;
   float: left;
   background: $background;
 }
-
-.dropdown a:first-child {
-  width: 200px;
-}
-
 .navbar ul li a {
   display: block;
   text-decoration: none;
@@ -175,49 +174,6 @@ nav ol ol, nav ul ul, nav ul ol, nav ol ul {
   line-height: 50px;
   transition: .3s ease-in-out;
   padding-left: 10px;
-}
-
-.navbar .dropdown ul {
-  top: -120px;
-  position: absolute;
-  width: 200px;
-  transition: .3s;
-  z-index: -1;
-}
-
-.navbar .dropdown ul li {
-  border: 1px #fff solid;
-  padding-right: 50px;
-  border-top: none;
-  float: none;
-  position: relative;
-  transition: .3s;
-}
-
-.navbar .dropdown ul li:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 0px;
-  left: 0;
-  height: 100%;
-  background: #fff;
-  transition: .5s;
-}
-
-.navbar .dropdown ul li a {
-  display: inline-block;
-  color: #fff;
-  mix-blend-mode: difference;
-  width: 200px;
-}
-/* HOVERS */
-
-.navbar .dropdown ul li:hover:before {
-  width: 100%;
-}
-.navbar .dropdown:hover ul {
-  top: 50px;
 }
 .contact-icon {
   display: none;
@@ -520,43 +476,83 @@ span .menu-item:hover {
  text-align: right;
  padding-right: 40px;}
 
-#marker{
-  height: 6px;
-  background: $secondarycolor !important;
-  position: absolute;
-  bottom: 0;
-  width: $min-width;
-  z-index: 2;
-  @include transition(all 0.35s);
+/* .drop {
+  display: block}*/
+  
+.drop div {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
 }
 
-@for $i from 1 through 4{
-  .nav-links li:nth-child(#{$i}){
-    &:hover ul div{
-     @include transform(translate(0,0)); 
-    }
-    &:hover ~ #marker{
-      @include transform(translate(#{(-1+$i)*$min-width},0));
-    }
-  }    
+#marker {
+  height: 6px;
+  background: #3E8760 !important;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s;
+}
 
-.drop{
-    overflow: hidden;
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    width: 100%;
-    left: 0;
-    top: 48px;
-    div{
-      @include transform(translate(0,-100%));
-      @include transition(all 0.5s 0.1s);
-      position: relative;
-    }
-    li{
-      display:block;
-      padding: 0;
-      width: 100%;
-      background: $secondarycolor !important;
-    }
-  }
+.nav-links li:nth-child(1):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+
+.nav-links li:nth-child(2):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(120px, 0);
+  -moz-transform: translate(120px, 0);
+  -ms-transform: translate(120px, 0);
+  transform: translate(120px, 0);
+}
+
+.nav-links li:nth-child(3):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(240px, 0);
+  -moz-transform: translate(240px, 0);
+  -ms-transform: translate(240px, 0);
+  transform: translate(240px, 0);
+}
+
+.nav-links li:nth-child(4):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(360px, 0);
+  -moz-transform: translate(360px, 0);
+  -ms-transform: translate(360px, 0);
+  transform: translate(360px, 0);
+}
+
