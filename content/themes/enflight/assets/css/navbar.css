@@ -144,12 +144,13 @@ ol ol, ol ul, ul ol, ul ul {
     padding-left: 0em;
     margin: 0em auto;
 }
-nav ol ol, nav ul ul, nav ul ol, nav ol ul {
+/*For dropdown nav bar*/
+nav ul ul {
     margin: 0 0 0.4em 0;
     padding-left: 0em;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 1px;
+    border-radius: 2px;
     box-shadow: 0px 5px 5px rgba(208, 208, 208, 0.25)  
 }
 

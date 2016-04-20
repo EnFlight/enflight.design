@@ -44,17 +44,17 @@
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;  
+  -webkit-animation: neon1 3s ease-in-out infinite alternate;
+  -moz-animation: neon1 3s ease-in-out infinite alternate;
+  animation: neon1 3s ease-in-out infinite alternate;  
 }
 
 @-webkit-keyframes neon1 {
   from {
-    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 10px #B13BA2, 0 0 15px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 40px #FF1177, 0 0 60px #FF1177;
+    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 10px #B13BA2, 0 0 10px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 30px #FF1177, 0 0 50px #FF1177;
   }
   to {
-    box-shadow: 0 0 2.5px #A0038B, 0 0 5px #FDFD00, 0 0 5px #B13BA2, 0 0 7.5px #FF1177, 0 0 10px #FF1177, 0 0 15px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177;
+    box-shadow: 0 0 2.5px #A0038B, 0 0 5px #FDFD00, 0 0 5px #B13BA2, 0 0 5px #FF1177, 0 0 10px #FF1177, 0 0 15px #FF1177, 0 0 15px #FF1177, 0 0 25px #FF1177;
   }
 }
 
@@ -93,7 +93,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border: 2px solid #fff;
+  border: 2px solid transparent;
   -webkit-transition: border-width 0.25s;
   transition: border-width 0.25s;
   -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
