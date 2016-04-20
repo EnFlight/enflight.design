@@ -492,8 +492,8 @@ span .menu-item:hover {
 }
 
 #marker {
-  height: 6px;
-  background: #3E8760 !important;
+  height: 2px;
+  background: #ccc !important;
   position: absolute;
   bottom: 0;
   width: 120px;
@@ -504,7 +504,7 @@ span .menu-item:hover {
   transition: all 0.35s;
 }
 
-.nav-links li:nth-child(1):hover ul div {
+.nav-links li:nth-child(1):hover {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -517,7 +517,7 @@ span .menu-item:hover {
   transform: translate(0px, 0);
 }
 
-.nav-links li:nth-child(2):hover ul div {
+.nav-links li:nth-child(2):hover {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -530,7 +530,7 @@ span .menu-item:hover {
   transform: translate(120px, 0);
 }
 
-.nav-links li:nth-child(3):hover ul div {
+.nav-links li:nth-child(3):hover {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -543,7 +543,7 @@ span .menu-item:hover {
   transform: translate(240px, 0);
 }
 
-.nav-links li:nth-child(4):hover ul div {
+.nav-links li:nth-child(4):hover {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
