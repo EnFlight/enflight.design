@@ -42,17 +42,17 @@
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;  
+  -webkit-animation: neon1 .5s ease-in-out infinite alternate;
+  -moz-animation: neon1 .5s ease-in-out infinite alternate;
+  animation: neon1 .5s ease-in-out infinite alternate;  
 }
 
 @-webkit-keyframes neon1 {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FF1177, 0 0 12px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
   }
 }
 
