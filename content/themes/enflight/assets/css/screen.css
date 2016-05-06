@@ -985,6 +985,7 @@ body:not(.post-template) .post-title {
 
 .post-head.main-header {
     height: 90%;
+    background-position-y: 0px;    
     min-height: 45em;
 }
 
@@ -1751,6 +1752,7 @@ body:not(.post-template) .post-title {
 
     .post-head.main-header {
         height: 30%;
+        background-position-y: 50%;        
     }
 
     .tag-head.main-header,
