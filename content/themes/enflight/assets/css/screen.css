@@ -194,6 +194,7 @@ h6 {
 a {
     color: #ddd;
     transition: color ease 0.3s;
+    font-weight: bold;    
 }
 
 a:hover {
