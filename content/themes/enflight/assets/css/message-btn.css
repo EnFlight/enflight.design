@@ -257,3 +257,41 @@ table {
 table th, table td {
      padding: 0; 
 }
+
+/*Submissions*/
+
+.quantumWizTogglePaperradioRadioContainer {
+     -webkit-animation: quantumWizPaperAnimateSelectOut .2s forwards; 
+     animation: quantumWizPaperAnimateSelectOut .2s forwards; 
+     position: relative; 
+     width: 20px; 
+     height: 20px; 
+     cursor: pointer; 
+}
+
+.quantumWizTogglePaperradioOffRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: rgba(0,0,0,0.54);
+}
+
+.quantumWizTogglePaperradioOnRadio {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #009688;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform ease .28s;
+    transition: -webkit-transform ease .28s;
+    -webkit-transition: transform ease .28s;
+    transition: transform ease .28s;
+}
