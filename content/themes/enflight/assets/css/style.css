@@ -86,8 +86,13 @@ body{
 ::-moz-selection{color:#222;background:#D6EDFF;text-shadow:none}
 ::-moz-selection,
 ::selection{color:#222;background:#D6EDFF;text-shadow:none}
-a{color:inherit;text-decoration:none;font-weight:400;transition:all ease-out 0.2s}
-a:hover,a:focus{color:#1F2026}.post-content a{border-bottom:2px solid #222}
+a{
+	color:#54a3e6;
+	text-decoration:none;
+	font-weight:400;
+	transition:all ease-out 0.2s}
+a:hover,a:focus{color:#fff}
+.post-content a{border-bottom:2px solid #222}
 .post-content a:hover,.post-content a:focus{border-color:#222}
 h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;color:#1F2026}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
