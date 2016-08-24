@@ -550,7 +550,8 @@ body{
 
 	#header .header-image img{
 		width:100%;
-		margin:auto}
+		margin:auto;
+		height:auto}
 
 	#header.has-cover .header-image{border-color:#fff}
 
