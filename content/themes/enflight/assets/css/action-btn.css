@@ -1,0 +1,102 @@
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+@keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+.wrapper {
+  display: block;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.button {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+/*  border: 1px solid rgba(250, 250, 250, .5);*/
+  display: inline-block;
+  background-color: #222;
+  border-radius: 2px;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;  
+/*  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: neon1 3s ease-in-out infinite alternate;
+  -moz-animation: neon1 3s ease-in-out infinite alternate;
+  animation: neon1 3s ease-in-out infinite alternate;  
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 10px #B13BA2, 0 0 10px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 30px #FF1177, 0 0 50px #FF1177;
+  }
+  to {
+    box-shadow: 0 0 2.5px #A0038B, 0 0 5px #FDFD00, 0 0 5px #B13BA2, 0 0 5px #FF1177, 0 0 10px #FF1177, 0 0 15px #FF1177, 0 0 15px #FF1177, 0 0 25px #FF1177;
+  }
+}
+
+.button:hover {color: #fff;}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  -webkit-transition: border-width 0.25s;
+  transition: border-width 0.25s;
+  -webkit-border-image: -webkit-linear-gradient(315deg, #A0038B, #FD0000, #FDFD00);
+       -o-border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
+          border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
+  border-image-slice: 1;
+  pointer-events: none;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  -webkit-animation: 2.5s linear 0s infinite normal both paused hueShift;
+          animation: 2.5s linear 0s infinite normal both paused hueShift
+}
+
+.button:hover:before {
+  border-width: 5px;
+  -webkit-animation-play-state: running;
+          animation-play-state: running
+}
+@-webkit-keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}

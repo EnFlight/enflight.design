@@ -1,0 +1,45 @@
+.overlay{
+  background:rgba(34, 34, 34,.9);
+  text-align: center;
+/*  overflow: scroll;*/
+  width:100vw;
+  height:100%;
+  visibility:hidden;
+  opacity:0;
+  transition:opacity .4s ease,
+             visibility .4s ease;
+  -webkit-transition:opacity .4s ease,
+             visibility .4s ease;
+  -moz-transition:opacity .4s ease,
+             visibility .4s ease;
+  z-index:101;
+  position:fixed;
+  top:0;cover
+  margin:0;
+  overflow-y: scroll; 
+  filter:blur(5px);}
+
+.contactform {
+    background:#ecf0f1;
+    width:500px;
+    margin:auto;
+    padding:40px 40px 20px 40px;
+    z-index:101;
+    position:relative;
+    top:15%;
+    span{
+      color:$blueGray;
+      font-family:$lato;
+      font-weight:700;
+      text-transform:uppercase;
+      float:right;
+      margin-top:-30px;
+      margin-right:-20px;
+      font-size:24px;
+      cursor:pointer;
+}
+
+.contacts_wrapper {
+  font-size: 20px;
+  height: 50px;
+}
