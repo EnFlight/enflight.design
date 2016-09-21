@@ -1,4 +1,4 @@
-# Bleak
+# EnFlight.Design
 
 An elegant AJAX driven theme for [Ghost](http://github.com/tryghost/ghost/) by [Peter Amende](http://zutrinken.com/).
 
