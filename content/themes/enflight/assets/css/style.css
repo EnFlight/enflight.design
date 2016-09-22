@@ -119,9 +119,9 @@ blockquote *{margin:1em auto}
 blockquote *:first-child{margin-top:0}
 blockquote *:last-child{margin-bottom:0}
 em,i{
-	font-weight:700;
+	font-weight:500;
 	font-style:italic;
-	color:#D0D0D0}
+	color:#9EABAE}
 strong,b{
 	font-weight:700;
 	color:#eee;}
