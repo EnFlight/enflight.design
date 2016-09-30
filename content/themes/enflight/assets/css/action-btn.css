@@ -18,6 +18,7 @@
             transform: skewY(-45deg) translateX(12.5em);
   }
 }
+
 .wrapper {
   display: block;
   position: absolute;
@@ -51,7 +52,7 @@
 
 @-webkit-keyframes neon1 {
   from {
-    box-shadow: 0 0 5px #A0038B, 0 0 10px #FDFD00, 0 0 10px #B13BA2, 0 0 10px #FF1177, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 30px #FF1177, 0 0 50px #FF1177;
+    box-shadow: 0 0 5px #ca92c2, 0 0 10px #FDFD00, 0 0 10px #71a6e8, 0 0 10px #737373, 0 0 20px #000000, 0 0 30px #190b11, 0 0 30px #7298d6, 0 0 50px #4da5bd;
   }
   to {
     box-shadow: 0 0 2.5px #A0038B, 0 0 5px #FDFD00, 0 0 5px #B13BA2, 0 0 5px #FF1177, 0 0 10px #FF1177, 0 0 15px #FF1177, 0 0 15px #FF1177, 0 0 25px #FF1177;
@@ -84,6 +85,84 @@
 
 .button:hover:before {
   border-width: 5px;
+  -webkit-animation-play-state: running;
+          animation-play-state: running
+}
+@-webkit-keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.wrapper-view {
+  display: block;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper-view {
+    top: 180%;
+  }
+}
+
+.button-view {
+  padding: 0.35em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+  font-size: .8em;
+/*  border: 1px solid rgba(250, 250, 250, .5);*/
+  display: inline-block;
+  background-color: #222;
+  border-radius: 2px;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+/*  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-view:hover {color: #fff;}
+
+.button-view:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  -webkit-transition: border-width 0.25s;
+  transition: border-width 0.25s;
+  -webkit-border-image: -webkit-linear-gradient(1deg, #4b9dad, #d6edff, #d4d5d9);
+       -o-border-image: linear-gradient(1deg, #4b9dad, #d6edff, #d4d5d9);
+          border-image: linear-gradient(1deg, #4b9dad, #d6edff, #d4d5d9);
+  border-image-slice: 1;
+  pointer-events: none;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  -webkit-animation: 2.5s linear 0s infinite normal both paused hueShift;
+          animation: 2.5s linear 0s infinite normal both paused hueShift
+}
+
+.button-view:hover:before {
+  border-width: 3px;
   -webkit-animation-play-state: running;
           animation-play-state: running
 }
