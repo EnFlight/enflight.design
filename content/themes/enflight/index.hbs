@@ -9,6 +9,7 @@
 			<h1 class="header-name">{{@blog.title}}</h1>
 			{{#if @blog.description}}
 				<span class="header-description" href="/contact">{{!-- {{@blog.description}} --}}Elegant productions in photography, web and design.
+				<ul id='featured'></ul>
 				<div class="wrapper">
   					<a href="/contact" class="button">Share your story with us</a>
 				</div>
@@ -18,9 +19,10 @@
 
 	</div>
 	{{#if @blog.cover}}
-	<div class="header-cover" style="background-image: url({{@blog.cover}})"></div>
+	<div id="header-cover" class="header-cover"></div>
 	{{/if}}
 </header>
+
 
 <div id="post-index" class="container">
 
