@@ -180,3 +180,19 @@
             filter: hue-rotate(360deg);
   }
 }
+
+#featured a{
+  color: #fff
+}
+
+#featured:hover a{
+  color: #54a3e6
+}
+
+#featured{
+  color: #fff
+}
+
+#featured:hover{
+  color: #54a3e6
+}
