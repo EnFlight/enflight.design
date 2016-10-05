@@ -19,7 +19,8 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "node core/server/utils/npm/preinstall.js",
-    "start": "node index",
+    "start": "npm install --production && node index",
+    "dev": "node index",
     "test": "grunt validate --verbose"
   },
   "engines": {
