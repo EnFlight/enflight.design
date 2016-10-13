@@ -103,7 +103,7 @@
 }
 
 .wrapper-view {
-  display: block;
+  display: flex;
   position: absolute;
   top: 200%;
   left: 50%;
@@ -128,7 +128,6 @@
   display: inline-block;
   background-color: #222;
   border-radius: 2px;
-  display: flex;
   -webkit-animation-play-state: running;
   animation-play-state: running;
 /*  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  */
