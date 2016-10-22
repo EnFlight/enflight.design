@@ -21,7 +21,6 @@
     "node": "~0.10.0"
   },
   "scripts": {
-    "postinstall": "ncp node_modules/Casper content/themes/casper",
     "start": "node server.js"
   }
 }
