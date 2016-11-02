@@ -13,6 +13,7 @@
     "Casper": "TryGhost/Casper#1.3.3",
     "foobar": "1.1.0",
     "ghost": "0.11.2",
+    "ghost-s3-storage": "^0.2.2",
     "ghost-s3-storage-adapter": "3.0.4",
     "ncp": "latest",
     "pg": "latest",
