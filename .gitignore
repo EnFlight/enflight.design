@@ -53,6 +53,7 @@ CHANGELOG.md
 /core/test/coverage
 
 # Set Heroku links and access
+/config.js
 
 # Built asset files
 /core/built
