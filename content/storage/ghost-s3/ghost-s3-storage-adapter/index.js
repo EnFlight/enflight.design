@@ -93,13 +93,13 @@ S3Store.prototype.save = function(image, targetDir) {
             return self.s3Client.putObject(params).promise();
         })
         .tap(function() {
-            console.log('ghost-s3', 'Temp uploaded file path: ' + image.path);
+            console.log('ghost-s3-storage-adapter', 'Temp uploaded file path: ' + image.path);
         })
         .then(function(results) {
             return Promise.resolve(self.getObjectURL(filename));
         })
         .catch(function(err) {
-            console.error('ghost-s3', err);
+            console.error('ghost-s3-storage-adapter', err);
             throw err;
         });
 };
@@ -146,7 +146,7 @@ S3Store.prototype.serve = function(options) {
         s3Client = this.initS3Client();
     } catch (err) {
         return function(req, res, next) {
-            console.error("ghost-s3", err);
+            console.error("ghost-s3-storage-adapter", err);
             res.status(500);
         };
     }
@@ -163,7 +163,7 @@ S3Store.prototype.serve = function(options) {
             })
             .createReadStream()
             .on('error', function(err) {
-                console.error("ghost-s3", err);
+                console.error("ghost-s3-storage-adapter", err);
                 res.status(404);
                 next();
             })
@@ -190,7 +190,7 @@ S3Store.prototype.delete = function(filename, targetDir) {
 
     return this.s3Client.deleteObject(params).promise()
         .tap(function() {
-            console.log('ghost-s3', 'Deleted file: ' + pathToDelete);
+            console.log('ghost-s3-storage-adapter', 'Deleted file: ' + pathToDelete);
         })
         .then(function(results) {
             return Promise.resolve(true);
