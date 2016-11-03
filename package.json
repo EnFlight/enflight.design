@@ -31,7 +31,6 @@
     "fs-extra": "0.30.0",
     "ghost": "latest",
     "ghost-gql": "0.0.5",
-    "ghost-s3": "latest",
     "ghost-s3-storage-adapter": "^3.0.4",
     "glob": "5.0.15",
     "gscan": "0.0.15",
