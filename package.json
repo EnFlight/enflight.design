@@ -9,8 +9,7 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "private": true,
   "version": "0.11.2",
-  "dependencies": {
-    "aws-sdk": "2.0.9",    
+  "dependencies": {   
     "Casper": "TryGhost/Casper#1.3.3",
     "foobar": "1.1.0",
     "ghost": "0.11.2",
@@ -18,8 +17,7 @@
     "ghost-s3-storage-adapter": "3.0.4",
     "ncp": "latest",
     "pg": "latest",
-    "sqlite3": "latest",
-    "when": "3.2.3"    
+    "sqlite3": "latest" 
   },
   "engines": {
     "node": "~0.10.0"
