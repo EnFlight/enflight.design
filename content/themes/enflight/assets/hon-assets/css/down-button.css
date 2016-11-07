@@ -1,0 +1,33 @@
+svg{
+  display: block;
+  margin:0 auto;
+  z-index: 1000;
+}
+svg:hover{
+  cursor; pointer;
+}
+svg.line{
+  width: 440px;
+  z-index: 1000;
+}
+svg.line path{
+  stroke-dasharray: 300;
+  stroke-dashoffset: 900;
+  animation: dash 5s linear infinite;
+  -webkit-animation: dash 7s linear infinite;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -900;
+  }
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: -900;
+  }
+}
+@media (max-width: 480px) {
+
+svg{
+  margin:0 -70px}
+}  

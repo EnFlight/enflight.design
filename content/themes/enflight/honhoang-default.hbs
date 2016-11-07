@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Hon Hoang</title>
+	<meta name="description" content="Hon Hoang is a fashion, portrait, and street photographer from Los Angeles California. He is currently working in South Korea." />
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{!-- FONT LINKS --}}
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
+
+{{!-- ICONS --}}
+    <link rel="shortcut icon" href="{{asset "/plane.ico"}}">
+
+{{!-- CSS LINKS --}}
+	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/dependencies.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/style.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/message-btn.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/horizontal-scroll.css"}}" />	
+	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/navbar.css"}}" />	
+
+</head>
+
+<body class="{{body_class}}">
+	<section id="wrapper">
+		<div id="ajax-container">
+
+	<!--=================================NavBar Section=================================-->
+<nav id="nav" class="nav">
+	<div class="menu-icon">
+  <span class="menu-item"></span>
+  <span class="menu-item"></span>
+  <span class="menu-item"></span>
+	</div>
+
+
+				<div class="center">
+			    	<ul class="nav-links">
+				<li class="navbar-logo selected">
+					<a href="www.honhoang.com">
+							{{#if @blog.logo}}
+						<img src="{{@blog.logo}}" alt="logo"/>
+							{{else}}
+						<span class="name">Hon Hoang</span>
+							{{/if}}
+					</a>
+				</li>
+					</ul>
+				</div>
+
+				<div class="center">
+			    	<ul class="nav-links">
+  				<li><a href="/tag/hon-street">Street</a></li>
+  				<li><a href="/tag/hon-portraits">Portraits</a></li>  				
+  				<li><a href="/tag/hon-fashion">Fashion</a></li>
+  				<li><a href="/tag/hon-events">Events</a></li>  				
+				<li><a href="/contact">Contact</a>
+				</li>
+
+			<div id="marker"></div>  	
+
+					</ul>
+				</div>
+
+	<div class="contact-icon">
+<a href="/contact"><img src="{{asset "/contact.png"}}"></a>
+	</div>
+
+	<div class="shownav" onmouseover="document.getElementById('navbar').className='navbar1'" onmousemove="document.getElementById('hidenav').className='hidenav1'">&nbsp;</div>
+
+	<div id="hidenav" class="hidenav0" onmouseover="document.getElementById('navbar').className='navbar0'" onmousemove="document.getElementById('hidenav').className='hidenav0'">&nbsp;</div>
+
+
+	<div id="navbar" class="navbar0"> <!-- navbar -->
+		<div class="navbar-inner">
+			<a class="nav-item one scroll" href="http://www.enflightdesign.com/pages/about.html">
+				<p color="white">About</p>
+			</a>	
+			<a class="nav-item two scroll" href="/tag/photography">
+				<p color="white">Photography</p>
+			</a>
+			<a class="nav-item three scroll" href="/tag/web">
+				<p color="white">Web</p>				
+			</a>
+			<a class="nav-item four scroll" href="/tag/design">
+				<p color="white">Design</p>
+			</a>			
+			<a class="nav-item five scroll" href="http://www.enflightdesign.com/gallery/photoshoots.html">
+			<p color="white">Portfolio</p>				
+			</a>
+			<a class="nav-item six scroll" href="/tag/articles">
+				<p color="white">Articles</p>				
+			</a>
+			<a class="nav-item seven scroll" href="/tag/inspirations">
+				<p color="white">Inspirations</p>
+			</a>			
+
+		</div> <!-- end navbar-inner -->
+	</div> 
+</nav>
+<!-- end navbar -->
+			{{{body}}}
+			<div id="body-class" style="display: none;" class="{{body_class}}"></div>
+ 			<footer id="footer">
+				<section class="credits">
+
+					<span class="credits-theme">Copyright <a href="http://www.enflightdesign.com/pages/about.html" target="_blank" rel="nofollow">Hon Hoang</a></span>
+
+					<span class="footer-social-links">
+
+						<a href="https://www.instagram.com/honnnhoang/" target="_blank">  
+						<img src="{{asset "/222_instagram.svg"}}">
+						</a>
+
+						<a href="https://www.facebook.com/enflight/" target="_blank">  
+						<img src="{{asset "/222_facebook.svg"}}">
+						</a>
+
+						<a href="https://www.twitter.com/enflightdesign/" target="_blank">  
+						<img src="{{asset "/222_twitter.svg"}}">
+						</a>	
+
+					</span>		
+
+				</section>
+			</footer>
+			{{#if @blog.navigation}}
+			{{navigation}}
+			{{/if}}
+		</div>
+	</section>
+	{{ghost_foot}}
+
+	<script type="text/javascript" src="{{asset "hon-assets/js/mousewheel.js"}}"></script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+        $(".post").wrap("<td></td>");
+        $("body").mousewheel(function(event, delta) {
+            this.scrollLeft -= (delta * 30);
+            event.preventDefault();
+        });   
+    });
+    </script>      
+    		
+</body>
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60951599-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>
