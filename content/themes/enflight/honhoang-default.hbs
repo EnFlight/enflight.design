@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
 
 {{!-- ICONS --}}
-    <link rel="shortcut icon" href="{{asset "/plane.ico"}}">
+    <link rel="shortcut icon" href="{{asset "/hon-logo.png"}}">
 
 {{!-- CSS LINKS --}}
 	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/dependencies.css"}}" />
@@ -40,9 +40,9 @@
 				<div class="center">
 			    	<ul class="nav-links">
 				<li class="navbar-logo selected">
-					<a href="www.honhoang.com">
+					<a href="http://www.honhoang.com">
 							{{#if @blog.logo}}
-						<img src="{{@blog.logo}}" alt="logo"/>
+						<img src="{{asset "/hon-logo.png"}}" alt="logo"/>
 							{{else}}
 						<span class="name">Hon Hoang</span>
 							{{/if}}
@@ -56,7 +56,8 @@
   				<li><a href="/tag/hon-street">Street</a></li>
   				<li><a href="/tag/hon-portraits">Portraits</a></li>  				
   				<li><a href="/tag/hon-fashion">Fashion</a></li>
-  				<li><a href="/tag/hon-events">Events</a></li>  				
+  				<li><a href="/tag/hon-events">Events</a></li>
+  				<li><a href="http://www.enflight.design">EnFlight.Design</a></li>    				  				
 				<li><a href="/contact">Contact</a>
 				</li>
 
@@ -66,7 +67,7 @@
 				</div>
 
 	<div class="contact-icon">
-<a href="/contact"><img src="{{asset "/contact.png"}}"></a>
+<a href="/contact"><img src="{{asset "/contact-black.svg"}}"></a>
 	</div>
 
 	<div class="shownav" onmouseover="document.getElementById('navbar').className='navbar1'" onmousemove="document.getElementById('hidenav').className='hidenav1'">&nbsp;</div>
