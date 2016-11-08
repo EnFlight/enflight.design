@@ -94,5 +94,7 @@ img{
 		height: 13.3em;}
 } 
 .nav-links li a img {
-    height: 1em;
+    height: 2.7em;
+    margin: -12px auto;
+    padding: 0px 0px 0px 0px;
 }
