@@ -245,10 +245,10 @@ span .menu-item:hover {
 }
 
 .contact-icon img {
-    width: 30%;
+    width: 30px;
     height: auto;
     top: 100px;
-    margin: -38 auto;
+    margin: 7px 35px;
     z-index:103;
 }
 
