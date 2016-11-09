@@ -97,7 +97,6 @@ a{
 	font-weight:400;
 	transition:all ease-out 0.2s}
 a:hover,a:focus{color:#fff}
-.post-content a{border-bottom:2px solid #222}
 .post-content a:hover,.post-content a:focus{border-color:#222}
 h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;color:#1F2026}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
@@ -237,7 +236,7 @@ body{
 	box-sizing:border-box;
 	width:100%;
 	min-height:100vh;
-	color: #eee;
+	color: #ababa7;
 	padding-bottom:6em}
 
 @-webkit-keyframes pushPrev{0%{-webkit-transform:translate3d(0, 0, 0);
