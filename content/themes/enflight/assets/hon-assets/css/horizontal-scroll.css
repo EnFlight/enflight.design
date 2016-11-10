@@ -25,9 +25,23 @@ img{
 
 .about-wrapper {
     float: left;
-    width: 25em;
+    max-width: 25em;
+    width: auto;
+    height: auto;
     text-align: center;
-    margin: 220px 20px 220px 20px;    
+    margin: 220px 20px 220px 20px;  
+}
+
+.about-wrapper a:hover {
+	color: #222;   
+}
+
+.hon-logo{
+	margin: 12px auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    display: block;
 }
 
 /*//MEDIA QUERY FOR HEIGHT*/
