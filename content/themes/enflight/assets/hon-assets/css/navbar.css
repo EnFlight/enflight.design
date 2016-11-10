@@ -31,7 +31,6 @@ nav ul ul li{
   }
 
 nav ul li:hover > ul{
-    z-index: 100;
     display: block;
     color: #414753;
     background-color: #fbfbfb;

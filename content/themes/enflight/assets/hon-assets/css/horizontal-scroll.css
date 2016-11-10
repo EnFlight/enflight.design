@@ -23,6 +23,13 @@ img{
     padding-left: .4em;			
 }
 
+.about-wrapper {
+    float: left;
+    width: 25em;
+    text-align: center;
+    margin: 220px 20px 220px 20px;    
+}
+
 /*//MEDIA QUERY FOR HEIGHT*/
 @media (max-height: 950px) {
 	img{
