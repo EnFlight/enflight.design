@@ -29,25 +29,27 @@ img{
     width: auto;
     height: auto;
     text-align: center;
-    margin: 220px 20px 220px 20px;  
+    margin: 220px 50px 220px 50px;  
 }
 
 .about-wrapper a:hover {
 	color: #222;   
 }
 
-.hon-logo{
+*/
+/*//MEDIA QUERY FOR HEIGHT*/
+@media (min-height: 1050px) {
+	.center img{
 	margin: 12px auto;
     position: absolute;
     left: 50%;
     margin-left: -50px !important;
-    display: block;
-}
+    display: block;}	
+}  
 
-/*//MEDIA QUERY FOR HEIGHT*/
 @media (max-height: 950px) {
 	img{
-		height: 51.5em;}
+		height: 51.5em;}	
 }  
 
 @media (max-height: 900px) {

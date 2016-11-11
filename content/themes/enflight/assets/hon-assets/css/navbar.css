@@ -210,7 +210,22 @@ li.navbar-logo {
 
 .center {
     margin: 0 auto;
-    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;    
+}
+
+li.navbar-logo.selected {
+    margin: -12px 0px 0px 0px;
+}
+
+li {
+  display: none;
+}
+
+.navbar-logo li a img {
+  display: block;
 }
 
 nav img {
