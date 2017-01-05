@@ -1,0 +1,28 @@
+{{!< honhoang-default}}
+
+{{!-- CSS LINKS --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/message-btn.css"}}" />
+    
+{{#post}}
+
+<main class="content" role="main">
+    <div class="inner">
+
+        <article class="{{post_class}}">
+            
+            <header class="post-header">
+                <h1 class="post-title">{{{title}}}</h1>
+            </header>
+
+<p class="contact-details">Need a website built or work done in photography? Send a message using the contact box below.</p>
+
+            <section class="post-content">
+                {{content}}
+            </section>
+    
+            {{/post}}
+    
+        </article>
+    </div>
+
+</main>

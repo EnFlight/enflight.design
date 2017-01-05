@@ -1,0 +1,123 @@
+/*
+	HORIZONTAL ALIGN
+*/
+p {
+    display: table-cell;
+    text-align: center;
+}
+
+#image-wrapper{
+	display:flex;
+    margin: 20px auto;
+}
+
+#image-wrapper p{  
+	align-items: center;
+    height: 5.7em;	
+}
+
+img{
+	max-height: 44.5em;	
+    padding-top: .4em;
+    padding-bottom: .4em;    
+    padding-left: .4em;			
+}
+
+.about-wrapper {
+    float: left;
+    max-width: 25em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 220px 50px 220px 50px;  
+}
+
+.about-wrapper a:hover {
+	color: #222;   
+}
+
+*/
+/*//MEDIA QUERY FOR HEIGHT*/
+@media (min-height: 1050px) {
+	.center img{
+	margin: 12px auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    display: block;}	
+}  
+
+@media (max-height: 950px) {
+	img{
+		height: 51.5em;}	
+}  
+
+@media (max-height: 900px) {
+	img{
+		height: 48.5em;}
+} 
+
+@media (max-height: 850px) {
+	img{
+		height: 45.5em;}
+}  
+
+@media (max-height: 800px) {
+	img{
+		height: 42.5em;}
+}  
+
+@media (max-height: 750px) {
+	img{
+		height: 39.2em;}
+}  
+
+@media (max-height: 700px) {
+	img{
+		height: 36.2em;}
+}  
+
+@media (max-height: 650px) {
+	img{
+		height: 32.2em;}
+}  
+
+@media (max-height: 600px) {
+	img{
+		height: 30.3em;}
+}  
+
+@media (max-height: 550px) {
+	img{
+		height: 25.3em;}
+}  
+
+@media (max-height: 500px) {
+	img{
+		height: 23.3em;}
+}  
+
+@media (max-height: 450px) {
+	img{
+		height: 21.3em;}
+}  
+
+@media (max-height: 400px) {
+	img{
+		height: 17.3em;}
+} 
+
+@media (max-height: 350px) {
+	img{
+		height: 15.3em;}
+} 
+
+@media (max-height: 300px) {
+	img{
+		height: 13.3em;}
+} 
+.nav-links li a img {
+    height: 2.7em;
+    margin: -12px auto;
+    padding: 0px 0px 0px 0px;
+}
