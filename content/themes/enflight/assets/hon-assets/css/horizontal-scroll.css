@@ -2,7 +2,6 @@
 	HORIZONTAL ALIGN
 */
 p {
-    display: table-cell;
     text-align: center;
 }
 

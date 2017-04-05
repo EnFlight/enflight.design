@@ -96,14 +96,34 @@ a{
 	text-decoration:none;
 	font-weight:400;
 	transition:all ease-out 0.2s}
-a:hover,a:focus{color:#fff}
+a:hover,a:focus{color:#222}
+
 .post-content a:hover,.post-content a:focus{border-color:#222}
-h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;color:#1F2026}
+
+h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;
+	color:#1F2026}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
-h1{font-size:2em;line-height:1em;margin:2em 0 -0.5em}
-h2{font-size:1.75em;line-height:1.143em;margin:2.286em 0 -0.571em}
-h3{font-size:1.5em;line-height:1.334em;margin:2em 0 -0.667em}
-h4{font-size:1.25em;line-height:1.2em;margin:2.4em 0 -0.8em}
+
+h1{font-size:2em;
+   line-height:1em;
+   text-align: center;
+   margin:2em 0 -0.5em}
+
+h2{font-size:1.75em;
+   line-height:1.143em;
+   text-align: center;	   
+   margin:2.286em 0 -0.571em}
+
+h3{font-size:1.5em;
+	line-height:1.334em;
+   	text-align: center;	
+	margin:2em 0 -0.667em}
+
+h4{font-size:1.25em;
+   line-height:1.2em;
+   text-align: center;
+   margin:2.4em 0 -0.8em}
+
 p{margin:2em auto}
 ul{list-style:none}
 li{
@@ -122,13 +142,16 @@ blockquote{margin:2em auto;padding:0 1em;box-sizing:border-box;border-left:0.25e
 blockquote *{margin:1em auto}
 blockquote *:first-child{margin-top:0}
 blockquote *:last-child{margin-bottom:0}
+
 em,i{
 	font-weight:500;
 	font-style:italic;
 	color:#9EABAE}
+
 strong,b{
-	font-weight:700;
-	color:#eee;}
+	font-weight:900;
+	color:#222;}
+
 small{font-size:0.9em}
 mark{background-color:#FFC336}
 code,tt{display:inline-block;position:relative;top:-1px;padding:3px 6px;margin:-1px 2px;font-family:'Inconsolata', monospace;font-size:0.875em;line-height:1.143em;white-space:pre;background:#E1E2E6;color:#000;font-weight:400;border-radius:2px}
