@@ -1171,3 +1171,8 @@ header.main-header.post-head {
     text-align: center;
     margin: 220px 20px 20px 20px;    
 }
+
+.about-social-links img{
+	width: 25px;
+	height: auto;
+}
