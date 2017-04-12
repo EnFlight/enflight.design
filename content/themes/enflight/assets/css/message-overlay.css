@@ -17,7 +17,7 @@
   top:0;cover
   margin:0;
   overflow-y: scroll; 
-  filter:blur(5px);}
+/*  filter:blur(5px);*/}
 
 .contactform {
     background:#ecf0f1;

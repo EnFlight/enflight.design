@@ -645,7 +645,6 @@ body{
 	.footer-social-links{
 
 	}		
-
 	
 	.footer-social-links img{
 		display: -webkit-inline-box;
@@ -1101,3 +1100,9 @@ body{
 header.main-header.post-head {
     background-size: contain;}	
 }  
+
+.about-social-links img {
+    margin: 0px auto;
+    width: 25px;
+    height: auto;
+}

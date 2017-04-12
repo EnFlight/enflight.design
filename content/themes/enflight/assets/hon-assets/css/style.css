@@ -355,6 +355,12 @@ body{
 			opacity:0;
 			z-index:100}
 
+.about-social-links img {
+    margin: 0px auto;
+    width: 25px;
+    height: auto;
+}			
+
 @media only screen and (max-width: 50em){
 	#menu{
 		width:90%;
@@ -1164,4 +1170,9 @@ header.main-header.post-head {
     width: 25em;
     text-align: center;
     margin: 220px 20px 20px 20px;    
+}
+
+.about-social-links img{
+	width: 25px;
+	height: auto;
 }
