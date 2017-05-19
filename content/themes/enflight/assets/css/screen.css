@@ -1099,6 +1099,7 @@ body:not(.post-template) .post-title {
 
 .author-meta {
     margin: 1.6rem 0;
+    text-align: center;
 }
 /* Location, website, and link */
 .author-profile .author-meta {
