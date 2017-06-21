@@ -431,6 +431,7 @@ margin on the iframe, cause it breaks stuff. */
 
 header.main-header.post-head {
     background-size: contain;
+    margin-top: 3.9%;
 }
 
 /* Big cover image on the home page */
