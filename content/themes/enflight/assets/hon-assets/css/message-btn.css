@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 5px}
 
 #wrapper {
-    background: #eee;
+    background: #eee;    
 }
 
 #message_btn {
@@ -137,7 +137,7 @@ box-shadow:         0px 0px 30px 0px rgba(280, 280, 280, 0.67);
 }
 
 .input-field-icon {
-  color: #fff;
+  color: #222;
   font-size: 18px;
   position: absolute;
   right: 10px;
@@ -153,7 +153,7 @@ box-shadow:         0px 0px 30px 0px rgba(280, 280, 280, 0.67);
   width: 100%;
   border-bottom: 2px solid #bdc3c7;
   border-radius: 3px;
-  background-color: rgba(34,34,34,0.5);
+  background-color: rgb(255, 255, 255);;
   font-size: 20px;
   line-height: 1.467;
   font-family: 'Poiret One', cursive;
@@ -194,31 +194,31 @@ input, textarea {
 
 
 .has-error input, .has-error textarea {
-  color: #fff;
+  color: #222;
   border-color: #e74c3c;
 }
 
 .has-error .input-field-icon {
-  color: #fff;
+  color: #222;
 }
 
 .has-success input, .has-success textarea {
-  color: #fff;
+  color: #222;
   border-color: #2ecc71;
 }
 
 .has-success .input-field-icon {
-  color: #fff;
+  color: #222;
 }
 
 
 input:focus, textarea:focus {
-  border-color: #fff;
-  color: #fff;
+  border-color: #222;
+  color: #222;
 }
 
 input:focus + .input-field-icon {
-  color: #fff;
+  color: #222;
 }
 
 textarea.form-control {

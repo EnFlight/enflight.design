@@ -124,12 +124,20 @@ h4{font-size:1.25em;
    text-align: center;
    margin:2.4em 0 -0.8em}
 
-p{margin:2em auto}
+/*p{margin:2em auto}*/
 ul{list-style:none}
 li{
 	position:relative
 	list-style:none;}
-ul>li:before,ol>li:before{position:absolute;width:2em;margin-left:-3em;font-size:1em;font-weight:400;line-height:1.5em;text-align:right;color:#1F2026}
+ul>li:before,ol>li:before{
+	position:absolute;
+	width:2em;
+	margin-left:-3em;
+	font-size:1em;
+	font-weight:400;
+	line-height:1.5em;
+	text-align:right;
+	color:#1F2026}
 ul>li:before{margin-top:0.125em;/*content:'*'*/}
 ol{list-style-type:none;counter-reset:item}
 ol>li:before{content:counter(item) ". " !important;counter-increment:item}

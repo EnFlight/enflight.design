@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +21,21 @@
 	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/horizontal-scroll.css"}}" />	
 	<link rel="stylesheet" type="text/css" href="{{asset "hon-assets/css/navbar.css"}}" />		
 
+			{{!-- facebook plugin --}}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=565348926938963";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>				
+			{{!-- end facebook plugin --}}	
+
 </head>
 
 <body class="{{body_class}}">
+
 	<section id="wrapper">
 		<div id="ajax-container">
 
@@ -122,6 +133,7 @@
 <!-- end navbar -->
 			{{{body}}}
 			<div id="body-class" style="display: none;" class="{{body_class}}"></div>
+
  			<footer id="footer">
 				<section class="credits">
 
