@@ -2,9 +2,9 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
 
-<header id="header" class="header{{#if @blog.cover}} has-cover{{/if}}">
-    <div class="vertical">
-        {{#tag}}
+<header id="header" class="header{{#if @blog.cover}} has-cover{{else}}{{#if tag.image}} has-cover{{/if}}">
+{{!--     <div class="vertical"> --}}
+{{!--         {{#tag}} --}}
 	<div class="inner">
 		<span class="header-title">
 			<h1 class="header-name">{{tag.name}}</h1>
@@ -13,8 +13,8 @@
 			{{/if}}
 		</span>
 	</div>
-        {{/tag}}
-    </div>
+{{!--         {{/tag}} --}}
+{{!--     </div> --}}
     {{#if @blog.cover}}
     <div id="header-cover" class="header-cover"></div>
     {{/if}}
