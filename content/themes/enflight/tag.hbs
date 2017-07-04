@@ -2,7 +2,25 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
 
-<header id="header" class="header{{#if tag.image}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
+<header id="header" class="header{{#if @blog.cover}} has-cover{{/if}}">
+    <div class="vertical">
+        {{#tag}}
+	<div class="inner">
+		<span class="header-title">
+			<h1 class="header-name">{{tag.name}}</h1>
+			{{#if tag.description}}
+				<span class="header-description">{{tag.description}}</span>
+			{{/if}}
+		</span>
+	</div>
+        {{/tag}}
+    </div>
+    {{#if @blog.cover}}
+    <div id="header-cover" class="header-cover"></div>
+    {{/if}}
+</header>
+
+{{!-- <header id="header" class="header{{#if tag.image}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
 	<div class="inner">
 		<span class="header-title">
 			<h1 class="header-name">{{tag.name}}</h1>
@@ -18,7 +36,9 @@
 	<div class="header-cover" style="background-image: url('{{@blog.cover}}');"></div>
 	{{/if}}
 	{{/if}}
-</header>
+</header> --}}
+
+
 
 <div id="post-index" class="container">
 
