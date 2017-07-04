@@ -15,10 +15,17 @@ p {
     height: 5.7em;	
 }
 
+.navbar-logo img{
+	max-height: 44.5em;	
+    padding-top: 0em;
+    padding-bottom: 0em;    
+    padding-left: 0em;			
+}
+
 img{
 	max-height: 44.5em;	
     padding-top: .4em;
-    padding-bottom: .4em;    
+    padding-bottom: .4em;   
     padding-left: .4em;			
 }
 
@@ -43,7 +50,25 @@ img{
     position: absolute;
     left: 50%;
     margin-left: -50px !important;
-    display: block;}	
+    display: block;}
+
+.nav-links li a img {
+    height: 2.7em;
+    /* margin: -12px auto; */
+    /* padding: 0px 0px 0px 0px; */
+	}
+
+.navbar-logo img{
+	max-height: 44.5em;	
+    padding-top: 0em;
+    padding-bottom: 0em;    
+    padding-left: 0em;			
+	}
+
+.navbar-logo a{
+	margin: 0px 25px 0px 25px; 
+	}	
+
 }  
 
 @media (max-height: 950px) {
@@ -117,6 +142,5 @@ img{
 } 
 .nav-links li a img {
     height: 2.7em;
-    margin: -12px auto;
-    padding: 0px 0px 0px 0px;
+    margin: auto auto;
 }

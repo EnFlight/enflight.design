@@ -13,6 +13,11 @@ nav {
   box-shadow: 0px 0px 2px #2d3031;
 }
 
+.navbar-logo.selected {
+    margin: 0px;
+}
+
+
 ul.nav-links {
     display: flex;
 }
@@ -100,6 +105,10 @@ nav ul li a:hover > li{
 .navbar-logo:hover{
     text-shadow: 80 8 80px #fff;
   }  
+
+.navbar-logo a{
+  margin: 0px 0px 0px 0px; 
+} 
 
 nav ul{list-style:none}
 
@@ -216,9 +225,9 @@ li.navbar-logo {
     display: block;    
 }
 
-li.navbar-logo.selected {
+/*li.navbar-logo.selected {
     margin: -12px 0px 0px 0px;
-}
+}*/
 
 li {
   display: none;
