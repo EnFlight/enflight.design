@@ -17,17 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset "css/message-btn.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "css/facebook-plugin.css"}}" />	
 
-			{{!-- facebook plugin --}}
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=565348926938963";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>				
-			{{!-- end facebook plugin --}}	
-
 	{{ghost_head}}
 </head>
 
@@ -168,6 +157,17 @@
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/scroll.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/headerRandomizer.js"}}"></script>	
+
+				{{!-- facebook plugin --}}
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=565348926938963";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>				
+			{{!-- end facebook plugin --}}	
+
 </body>
 
 <!-- google analytics -->
