@@ -1,0 +1,66 @@
+{
+  "name": "ghost-s3-storage-adapter",
+  "version": "3.0.4",
+  "description": "Store Ghost's images on S3 and proxy requests for local images to S3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aorcsik/ghost-s3-storage-adapter.git"
+  },
+  "keywords": [
+    "ghost",
+    "aws",
+    "amazon",
+    "s3",
+    "storage",
+    "plugin",
+    "blog"
+  ],
+  "author": {
+    "name": "Antal Orcsik",
+    "email": "aorcsik@gmail.com",
+    "url": "http://aorcsik.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aorcsik/ghost-s3-storage-adapter/issues"
+  },
+  "homepage": "https://github.com/aorcsik/ghost-s3-storage-adapter",
+  "dependencies": {
+    "aws-sdk": "^2.3.0",
+    "bluebird": "^2.10.2"
+  },
+  "peerDependencies": {
+    "ghost": ">=0.10.0"
+  },
+  "gitHead": "c1d6a9c8178270c8c294b086cd265e15f5836f41",
+  "_id": "ghost-s3-storage-adapter@3.0.4",
+  "_shasum": "0ef70e4b389e830f544b9ee5987052f42553eaf6",
+  "_from": "ghost-s3-storage-adapter@3.0.4",
+  "_npmVersion": "3.10.7",
+  "_nodeVersion": "4.2.6",
+  "_npmUser": {
+    "name": "aorcsik",
+    "email": "aorcsik@gmail.com"
+  },
+  "dist": {
+    "shasum": "0ef70e4b389e830f544b9ee5987052f42553eaf6",
+    "tarball": "https://registry.npmjs.org/ghost-s3-storage-adapter/-/ghost-s3-storage-adapter-3.0.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "aorcsik",
+      "email": "aorcsik@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/ghost-s3-storage-adapter-3.0.4.tgz_1474027960385_0.8586711909156293"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/ghost-s3-storage-adapter/-/ghost-s3-storage-adapter-3.0.4.tgz",
+  "readme": "ERROR: No README data found!"
+}
