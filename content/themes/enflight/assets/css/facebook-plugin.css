@@ -18,3 +18,7 @@
 ._10b4 {
     max-height: 0px;
 }
+
+.fb_iframe_widget {
+    z-index: 1;
+}
