@@ -21,13 +21,6 @@ function randomizeCover(data) {
             '<a href="http://www.enflight.design' + post.url + '">' + post.title + '</a>'
         );
     });
-
-    $.each(displayPosts, function (i, post, img) {
-        header.style.backgroundImage = "url('" + post.image+ "')";
-        linkContainer.append(
-            '<a href="http://www.enflightdesign.com' + post.url + '">' + post.title + '</a>'
-        );
-    });    
 }    
 
 function shuffleArray(array) {
