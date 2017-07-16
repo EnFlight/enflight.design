@@ -21,34 +21,13 @@ function randomizeCover(data) {
             '<a href="http://www.enflight.design' + post.url + '">' + post.title + '</a>'
         );
     });
-}    
-
-function randomizeCover(data) {
-    var linkContainer = $('#featured');
-    var header = $('#header-cover')[0];
-    var sortedPosts = shuffleArray(data.posts);
-    var displayPosts = sortedPosts.slice(0, 1);
 
     $.each(displayPosts, function (i, post, img) {
         header.style.backgroundImage = "url('" + post.image+ "')";
         linkContainer.append(
             '<a href="http://www.enflightdesign.com' + post.url + '">' + post.title + '</a>'
         );
-    });
-}    
-
-function randomizeCover(data) {
-    var linkContainer = $('#featured');
-    var header = $('#header-cover')[0];
-    var sortedPosts = shuffleArray(data.posts);
-    var displayPosts = sortedPosts.slice(0, 1);
-
-    $.each(displayPosts, function (i, post, img) {
-        header.style.backgroundImage = "url('" + post.image+ "')";
-        linkContainer.append(
-            '<a href="http://localhost:2368/' + post.url + '">' + post.title + '</a>'
-        );
-    });
+    });    
 }    
 
 function shuffleArray(array) {
