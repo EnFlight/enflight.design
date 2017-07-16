@@ -20,19 +20,19 @@ function randomizeCover(data) {
         linkContainer.append(
             '<a href="http://www.enflight.design' + post.url + '">' + post.title + '</a>'
         );
-    });
+
 
     $.each(displayPosts, function (i, post, img) {
-        header.style.backgroundImage = "url('" + post.image+ "')";
+        header.style.backgroundImage = "http://www.enflight.design/('" + post.image+ "')";
         linkContainer.append(
             '<a href="http://www.enflightdesign.com' + post.url + '">' + post.title + '</a>'
         );
-    });
+
 
     $.each(displayPosts, function (i, post, img) {
         header.style.backgroundImage = "url('" + post.image+ "')";
         linkContainer.append(
-            '<a href="http://localhost:2368/' + post.url + '">' + post.title + '</a>'
+            '<a href="http://localhost:2368' + post.url + '">' + post.title + '</a>'
         );
     });    
 
