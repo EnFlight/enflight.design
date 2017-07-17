@@ -6,6 +6,7 @@ b-cov
 *.out
 *.pid
 *.gz
+*.db
 
 pids
 logs
@@ -35,6 +36,8 @@ Session.vim
 .tern-project
 
 # Ghost DB file
+*.db
+*.db-journal
 
 .build
 .dist
