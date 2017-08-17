@@ -584,7 +584,7 @@ body{
 		opacity:0.5}
 
 	#header .header-cover{
-		position:absolute;
+		position:fixed;
 		width:100%;
 	    min-height: 45em;
 		top:0;
