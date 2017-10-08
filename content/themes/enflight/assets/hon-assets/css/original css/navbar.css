@@ -1,0 +1,595 @@
+nav {
+  z-index: 105;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 900;
+  position: fixed;
+  height: 50px;
+  background-color: #fbfbfb;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  box-shadow: 0px 0px 2px #2d3031;
+}
+
+.navbar-logo.selected {
+    margin: 0px;
+}
+
+
+ul.nav-links {
+    display: flex;
+}
+
+/*nav ul {
+    display: flex;
+    justify-content: center;
+  }*/
+
+nav ul ul{
+    display: none;
+  }
+
+nav ul ul li{
+    font-family: 'Poiret One', cursive; 
+  }
+
+nav ul li:hover > ul{
+    display: block;
+    color: #414753;
+    background-color: #fbfbfb;
+    margin: 5px auto;
+    border-radius: 3px;
+    box-shadow: 0px 9px 20px -5px #2d3031;
+    transition: all .5s ease;
+  }
+
+nav ul li a:hover > li{
+    cursor: pointer;    
+  }
+
+
+  .brand-logo img {
+    width: 175px;
+    margin: -14px 10px 10px 10px;
+    transition: all .5s ease;
+  }
+
+
+  .brand-logo:hover{
+  color: #fff;
+  transition: all .5s ease;
+  text-shadow: 8 8 8px #fff;
+  }
+
+  .center {
+    margin: 0 auto;
+  }    
+
+  .center ul li{
+    list-style: none;
+    margin: 0.7em 0;
+    font-family: 'Poiret One', cursive;     
+  }
+
+  .center a {
+      color: #414753;
+      text-decoration: none;
+      transition: color .5s ease;
+      margin: 0px 25px 0px 25px;
+      font-family: 'Poiret One', cursive;      
+  }  
+
+  .center a:hover {
+        color: #d8dfe6;
+        text-shadow: 80 8 80px #fff;
+  }
+
+/* .nav-links li {
+    margin: 15px 15px 15px 15px;
+  }*/
+  .nav-links:hover{
+    cursor: pointer;
+  }
+
+
+ .nav-links li ul li a{
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: 100;
+  }
+
+.navbar-logo:hover{
+    text-shadow: 80 8 80px #fff;
+  }  
+
+.navbar-logo a{
+  margin: 0px 0px 0px 0px; 
+} 
+
+nav ul{list-style:none}
+
+nav li{
+  position:relative;
+  list-style: none;}
+
+nav li:hover{
+  text-shadow: 80 8 80px #fff;
+}  
+
+nav ul>li:before,
+nav ol>li:before{
+  position:absolute;
+  width:2em;
+  margin-left:-3em;
+  font-size:1em;
+  font-weight:400;
+  line-height:1.5em;
+  text-align:right;
+  color:#1F2026}
+/*nav ul>li:before{
+  margin-top:0.125em;
+  content:'*'}*/
+nav ol{
+  list-style-type:none;
+  counter-reset:item}
+nav ol>li:before{
+  content:counter(item) ". " !important;
+  counter-increment:item}
+nav ol,ul{
+  padding-left:0em;
+  margin:0em auto}
+nav ol ul{
+  padding-left:0em;}  
+nav ol ol,ol ul,ul ol,ul ul{
+  padding-left:0em;
+  margin:0em auto}
+ol, ul {
+    padding-left: 0rem;
+}
+nav ol ol, ol ul, ul ol, ul ul {
+    padding-left: 0em;
+    margin: 0em auto;
+}
+ol ol, ol ul, ul ol, ul ul {
+    padding-left: 0em;
+    margin: 0em auto;
+}
+/*For dropdown nav bar*/
+nav ul ul {
+    margin: 0 0 0.4em 0;
+    padding-left: 0em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 5px 5px rgba(208, 208, 208, 0.25)  
+}
+
+.container {
+  height: 52px;
+  width: 100%;
+  position: fixed;
+  background: $background;
+}
+.navbar ul li {
+  height: 100%;
+  float: left;
+  background: $background;
+}
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  height: 100%;
+  font-size: 12px;
+  line-height: 50px;
+  transition: .3s ease-in-out;
+  padding-left: 10px;
+}
+.contact-icon {
+  display: none;
+}
+
+.shownav {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+/*Mobile Version of Navbar*/
+
+@media (max-width: 1050px) {
+
+.nav{
+  display: block;
+}
+
+li.navbar-logo {
+    display: block;
+}  
+/*LOOK IN HORIZONTAL-SCROLL.CSS UNDER SAME CLASS*/
+.nav-links img {
+    height: 1em;
+}
+
+.center {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;    
+}
+
+/*li.navbar-logo.selected {
+    margin: -12px 0px 0px 0px;
+}*/
+
+li {
+  display: none;
+}
+
+.navbar-logo li a img {
+  display: block;
+}
+
+nav img {
+  display: block;
+}
+
+.menu-icon {
+    display: block;
+    position: fixed;
+    right: 40px;
+    z-index: 103;
+    top: 20px;
+}
+
+.menu-icon:hover {
+    color: #fff;
+    text-shadow: 80 8 80px #fff;
+}
+
+span .menu-item:hover {
+    pointer: cursor;
+}
+
+.menu-icon:hover {
+    pointer: cursor;
+}
+
+.menu-icon img {
+/*    width: 80%;*/
+    top: 100px;
+    margin: 16px 50px 50px 3px;
+    z-index:103;
+}
+
+.contact-icon {
+    position: fixed;
+    display: block;
+    float: right;
+    margin-left: 30px;
+    z-index: 103;
+    top: 7px;
+}
+
+.contact-icon img {
+    width: 30px;
+    height: auto;
+    top: 100px;
+    margin: -38 auto;
+    z-index:103;
+}
+
+.contact-icon img:hover {
+  color: #fff;
+  text-shadow: 80 8 80px #fff;
+}
+
+.menu-item {
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 0 0 5px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.shownav{
+  display: block;
+  z-index:102;
+  width: 80px;
+  height: 55px;
+  right: 0px;
+  top:0;
+  position:fixed;
+}
+
+.menu {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &.open {
+    .menu-item {
+      background: #fff;
+      
+      &:first-child {
+        @include rotate(45deg);
+        @include transform-origin(10px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        @include rotate(-45deg);
+        @include transform-origin(8px);
+        }
+      }
+    }
+  }
+ }  
+}
+
+/*Navbar Slider*/
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidenav0{
+  z-index: 9;
+  width:0;
+  height:100%;
+  right:0;
+  top:0;
+  position:fixed;
+}
+
+.hidenav1{
+  z-index:9;
+  width:100%;
+  height:100%;
+  right:0;
+  top:0;
+  position:fixed;
+}
+
+.navbar0{
+  z-index:102;
+  width:100px;
+  height:100%;
+  position:fixed;
+  right:-100px;
+  top:0;
+  vertical-align:middle;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .5s;
+}
+  
+.navbar1{
+  z-index:101;
+  box-shadow: 0px 0px 3px #444;
+    background: rgb(251, 251, 251);
+    width:250px;
+    height:100%;
+    position:fixed;
+    right:0;
+    top:0;
+    vertical-align:middle;
+   -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .5s;
+}
+
+.navbar-inner {
+  padding-top: 80px;
+  vertical-align: middle; 
+  height: 500px;
+}
+/*@media (max-width: 480px) {
+
+@import "compass/css3";*/
+
+.menu {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &.open {
+    .menu-item {
+      background: #fff;
+      
+      &:first-child {
+        @include rotate(45deg);
+        @include transform-origin(10px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        @include rotate(-45deg);
+        @include transform-origin(8px);
+      }
+    }
+  }
+}
+
+.menu-item {
+  display: block;
+  width: 30px;
+  height: 1px;
+  border-radius: 4px;
+  margin: 0 0 5px;
+  background: #414753;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-item{
+/*    background: #222;*/
+    text-align: left;
+    padding-left: 40px;
+    vertical-align: middle;
+    display: block;
+}
+
+.nav-item.one:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+}
+.nav-item.two:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+}
+.nav-item.three:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+}
+.nav-item.four:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+}
+.nav-item.five:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+}
+.nav-item.six:hover{
+  background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;}
+
+.nav-item.six:hover
+{background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;}
+
+.nav-item.seven:hover{
+  background:#989898;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;}
+
+.nav-item img {
+  width: 35px;
+  height: 30px;
+  padding: 15px 0 0 0;
+  opacity: 0.9;
+   -webkit-font-smoothing: subpixel-antialiased;
+   transition: all .5s;}
+
+.nav-item p {
+  color: #414753;
+  font-size: 18px;
+  font-family: 'Poiret One', cursive;
+ -webkit-font-smoothing: subpixel-antialiased;
+ transition: all .5s;
+ text-align: right;
+ padding-right: 40px;}
+
+/* .drop {
+  display: block}*/
+  
+.drop div {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+/*#marker {
+  height: 2px;
+  background: #ccc !important;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s;
+}*/
+
+.nav-links li:nth-child(1):hover {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+
+.nav-links li:nth-child(2):hover {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(-120px, 0);
+  -moz-transform: translate(-120px, 0);
+  -ms-transform: translate(-120px, 0);
+  transform: translate(-120px, 0);
+}
+
+.nav-links li:nth-child(3):hover {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(240px, 0);
+  -moz-transform: translate(240px, 0);
+  -ms-transform: translate(240px, 0);
+  transform: translate(240px, 0);
+}
+
+.nav-links li:nth-child(4):hover {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav-links li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(360px, 0);
+  -moz-transform: translate(360px, 0);
+  -ms-transform: translate(360px, 0);
+  transform: translate(360px, 0);
+}
+

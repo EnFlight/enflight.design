@@ -1,0 +1,309 @@
+html {
+    overflow: scroll;
+    overflow-x: scroll;
+    background-color: #eeeeee;
+/*    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;    */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poiret One', cursive;
+    text-rendering: optimizeLegibility;
+    color: #ddd;
+    text-align: center;
+}
+
+.overlay-social-links {
+    display: flex;
+    align-items: center;
+}
+
+.overlay-social-links a {
+    margin: auto;
+}
+
+.overlay-social-links img {
+    margin: 10px;
+    height: 35px;    
+}
+
+.overlay-social-links img:hover {
+    cursor: pointer;
+}
+
+.post .post-title {
+    color: #222;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    text-shadow: 8 8 8px #fff;    
+    letter-spacing: 5px}
+
+#wrapper {
+    background: #eee;    
+}
+
+#message_btn {
+    position: fixed;
+    width: 50px;
+    height: 55px;
+    right: 40px;
+    top: 5px;
+    z-index: 9999;
+    transition: .6s;
+}
+
+@media (max-width: 480px) {
+#message_btn {
+    right: 20px;
+  }  
+}
+
+#message_btn img{
+    width: 74%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    border-radius: 3px;
+}
+
+#message_btn img:hover {
+    cursor: pointer;
+    background: rgba(280, 280, 280, .7);
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: all .5s;
+-webkit-box-shadow: 0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    -webkit-font-smoothing: subpixel-antialiased;
+-webkit-box-shadow: 0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(280, 280, 280, 0.67);
+    transition: all .5s;
+}
+
+.alert-close {
+    padding-top: 150px;
+    font-size: 35px;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    z-index: 105;
+}
+
+.alert-close:hover {
+    cursor: pointer;
+}
+
+.form {
+  width: 400px;
+  margin:auto;
+  border-radius: 3px;
+/*  margin-top: 15em;
+  margin-bottom: 6em;*/
+/*  padding: 1.25em;*/
+}
+
+
+.btn-primary {
+  box-shadow: 0; 
+  border: none; 
+  background-color: rgba(34,34,34,0.5);
+  border-color: #fff;
+  color: #000;
+  outline: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .5s;
+  padding: 10px -1px;
+  font-size: 17px;
+  line-height: 1.471;
+  width: 30%;
+  border-radius: 1px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 1.55em;
+  margin-bottom: 1.55em;
+  display: inherit;
+  font-family: 'Poiret One', cursive;
+}
+
+.form-group {
+  position: relative;
+  opacity: 1;
+  transition: .6s;
+}
+
+.input-field-icon {
+  color: #222;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  transition: .6s;
+  box-shadow: 0px 0px 9px rgba(208, 208, 208, 0.25);  
+}
+
+.form-control {
+  transition: opacity .6s;
+  opacity: 1;
+  border: 0;
+  width: 100%;
+  border-bottom: 2px solid #bdc3c7;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);;
+  font-size: 20px;
+  line-height: 1.467;
+  font-family: 'Poiret One', cursive;
+  padding: 4px;
+  height: 42px;
+  -webkit-appearance: none;
+}
+
+.form-control-gallery {
+  transition: opacity .6s;
+  opacity: 1;
+  border: 0;
+  border-bottom: 2px solid #bdc3c7;
+  border-radius: 3px;
+  background-color: rgba(45,45,45,0.5);
+  font-size: 20px;
+  line-height: 1.467;
+  font-family: 'Poiret One', cursive;
+  padding: 4px;
+  height: 42px;
+  -webkit-appearance: none;
+}
+
+
+input, textarea {
+  transition: all 800ms;
+  font-family: "Roboto";
+  resize: none;  /* removes the resize handle */
+  overflow: auto; /* removes default scrolling bars in IE */
+  outline:none; 
+  font-family:inherit; 
+  box-sizing:border-box;
+  width: 100%;
+  padding: 0px 4px;
+  color: #ababa7;
+/*  margin-top: 1.25em;*/
+}
+
+
+.has-error input, .has-error textarea {
+  color: #222;
+  border-color: #e74c3c;
+}
+
+.has-error .input-field-icon {
+  color: #222;
+}
+
+.has-success input, .has-success textarea {
+  color: #222;
+  border-color: #2ecc71;
+}
+
+.has-success .input-field-icon {
+  color: #222;
+}
+
+
+input:focus, textarea:focus {
+  border-color: #222;
+  color: #222;
+}
+
+input:focus + .input-field-icon {
+  color: #222;
+}
+
+textarea.form-control {
+  height: 120px;
+  transition: .6s;
+}
+
+textarea.form-control-gallery {
+  height: 120px;
+  transition: .6s;
+}
+
+textarea.form-control:focus {
+  height: 200px;
+  border-color: #fff;
+}
+
+textarea.form-control-gallery:focus {
+  height: 200px;
+  border-color: #fff;
+}
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+    margin-top: 12%;
+  }
+}
+
+.error-message{
+  display: none;
+}
+
+.ss-q-title {
+  display: none;
+}
+
+table {
+    margin: 0; 
+}
+
+table th, table td {
+     padding: 0; 
+}
+
+/*Submissions*/
+
+.quantumWizTogglePaperradioRadioContainer {
+     -webkit-animation: quantumWizPaperAnimateSelectOut .2s forwards; 
+     animation: quantumWizPaperAnimateSelectOut .2s forwards; 
+     position: relative; 
+     width: 20px; 
+     height: 20px; 
+     cursor: pointer; 
+}
+
+.quantumWizTogglePaperradioOffRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: rgba(0,0,0,0.54);
+}
+
+.quantumWizTogglePaperradioOnRadio {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #009688;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform ease .28s;
+    transition: -webkit-transform ease .28s;
+    -webkit-transition: transform ease .28s;
+    transition: transform ease .28s;
+}
+
+p.contact-details {
+    text-align: center;
+    padding: 50px;  
+    color: #222;    
+}
+
